@@ -1,0 +1,402 @@
+[
+  {
+    "restaurantID": 1,
+    "name": "SavoryDelights",
+    "phoneNumber": "267-995-1274",
+    "performance": "A culinary gem offering a diverse menu of gourmet dishes and exceptional service.",
+    "sale": 3,
+    "revenue ": true,
+    "locationId": 5,
+    "adminId": 10
+  },
+  {
+    "restaurantID": 2,
+    "name": "BistroElegance",
+    "phoneNumber": "803-689-2012",
+    "performance": "An intimate dining experience with a menu that blends flavors to perfection.",
+    "sale": 3,
+    "revenue ": false,
+    "locationId": 17,
+    "adminId": 4
+  },
+  {
+    "restaurantID": 3,
+    "name": "RusticCharm",
+    "phoneNumber": "219-987-4446",
+    "performance": "A cozy eatery known for its hearty comfort food and warm atmosphere.",
+    "sale": 5,
+    "revenue ": false,
+    "locationId": 30,
+    "adminId": 20
+  },
+  {
+    "restaurantID": 4,
+    "name": "CulinaryJourney",
+    "phoneNumber": "458-226-9589",
+    "performance": "Explore a world of flavors with our global-inspired menu and top-notch service.",
+    "sale": 2,
+    "revenue ": true,
+    "locationId": 25,
+    "adminId": 22
+  },
+  {
+    "restaurantID": 5,
+    "name": "OceanBreezeCafe",
+    "phoneNumber": "255-605-6509",
+    "performance": "Savor fresh seafood and coastal cuisine in a relaxed seaside setting.",
+    "sale": 1,
+    "revenue ": false,
+    "locationId": 23,
+    "adminId": 6
+  },
+  {
+    "restaurantID": 6,
+    "name": "GreenHarborGrill",
+    "phoneNumber": "630-587-9201",
+    "performance": "A green-focused eatery offering organic delights with a focus on sustainability.",
+    "sale": 4,
+    "revenue ": false,
+    "locationId": 17,
+    "adminId": 3
+  },
+  {
+    "restaurantID": 7,
+    "name": "MediterraneanFlavors",
+    "phoneNumber": "720-672-8145",
+    "performance": "Indulge in the rich and diverse tastes of the Mediterranean in a charming setting.",
+    "sale": 5,
+    "revenue ": false,
+    "locationId": 17,
+    "adminId": 36
+  },
+  {
+    "restaurantID": 8,
+    "name": "UrbanEats",
+    "phoneNumber": "211-812-9056",
+    "performance": "Experience the buzz of the city with our eclectic menu and vibrant ambiance.",
+    "sale": 3,
+    "revenue ": true,
+    "locationId": 6,
+    "adminId": 14
+  },
+  {
+    "restaurantID": 9,
+    "name": "GardenFreshBites",
+    "phoneNumber": "585-117-8383",
+    "performance": "Dine amidst lush gardens and savor farm-to-table cuisine at its finest.",
+    "sale": 5,
+    "revenue ": true,
+    "locationId": 16,
+    "adminId": 36
+  },
+  {
+    "restaurantID": 10,
+    "name": "CulinaryArtistry",
+    "phoneNumber": "294-937-6796",
+    "performance": "A haven for food enthusiasts, offering artistic dishes that tantalize the senses.",
+    "sale": 4,
+    "revenue ": true,
+    "locationId": 40,
+    "adminId": 36
+  },
+  {
+    "restaurantID": 11,
+    "name": "SunsetVibesCafe",
+    "phoneNumber": "745-417-5593",
+    "performance": "Chase the sunsets while enjoying a menu of delightful dishes and tropical drinks.",
+    "sale": 1,
+    "revenue ": false,
+    "locationId": 39,
+    "adminId": 36
+  },
+  {
+    "restaurantID": 12,
+    "name": "CozyHavenDiner",
+    "phoneNumber": "379-590-7158",
+    "performance": "A comforting retreat where homestyle recipes and warm hospitality take center stage.",
+    "sale": 3,
+    "revenue ": false,
+    "locationId": 15,
+    "adminId": 26
+  },
+  {
+    "restaurantID": 13,
+    "name": "ZenFusionCuisine",
+    "phoneNumber": "617-813-8079",
+    "performance": "Discover a fusion of flavors that harmonize in every exquisite dish.",
+    "sale": 2,
+    "revenue ": false,
+    "locationId": 3,
+    "adminId": 32
+  },
+  {
+    "restaurantID": 14,
+    "name": "ArtisanalElegance",
+    "phoneNumber": "800-855-7736",
+    "performance": "Elevate your dining experience with artisanal creations and impeccable service.",
+    "sale": 5,
+    "revenue ": true,
+    "locationId": 28,
+    "adminId": 21
+  },
+  {
+    "restaurantID": 15,
+    "name": "VibrantGourmetHub",
+    "phoneNumber": "784-462-0527",
+    "performance": "A hub of vibrant flavors where every bite tells a story of culinary craftsmanship.",
+    "sale": 4,
+    "revenue ": true,
+    "locationId": 18,
+    "adminId": 15
+  },
+  {
+    "restaurantID": 16,
+    "name": "TasteOfTradition",
+    "phoneNumber": "373-775-9294",
+    "performance": "Savor time-honored recipes that have been passed down for generations.",
+    "sale": 3,
+    "revenue ": true,
+    "locationId": 17,
+    "adminId": 4
+  },
+  {
+    "restaurantID": 17,
+    "name": "ExoticSpicesBistro",
+    "phoneNumber": "680-370-4297",
+    "performance": "Embark on a journey of exotic spices and aromatic dishes in a cozy atmosphere.",
+    "sale": 1,
+    "revenue ": false,
+    "locationId": 18,
+    "adminId": 32
+  },
+  {
+    "restaurantID": 18,
+    "name": "CulinaryHarmony",
+    "phoneNumber": "122-756-0833",
+    "performance": "Harmony of flavors, where each dish is a symphony of taste and texture.",
+    "sale": 5,
+    "revenue ": true,
+    "locationId": 2,
+    "adminId": 20
+  },
+  {
+    "restaurantID": 19,
+    "name": "LakesideRetreat",
+    "phoneNumber": "816-812-7911",
+    "performance": "Relax by the lakeside and savor a menu inspired by the tranquility of nature.",
+    "sale": 1,
+    "revenue ": false,
+    "locationId": 12,
+    "adminId": 39
+  },
+  {
+    "restaurantID": 20,
+    "name": "FusionFlavorsBistro",
+    "phoneNumber": "563-674-8047",
+    "performance": "A fusion of flavors that takes your taste buds on an exciting culinary journey.",
+    "sale": 2,
+    "revenue ": false,
+    "locationId": 18,
+    "adminId": 38
+  },
+  {
+    "restaurantID": 21,
+    "name": "GourmetEuphoria",
+    "phoneNumber": "682-535-2940",
+    "performance": "Experience euphoria with every bite as gourmet creations delight your senses.",
+    "sale": 4,
+    "revenue ": false,
+    "locationId": 23,
+    "adminId": 1
+  },
+  {
+    "restaurantID": 22,
+    "name": "CharmingHideaway",
+    "phoneNumber": "730-854-5602",
+    "performance": "Discover a hidden gem where charming ambiance meets exceptional cuisine.",
+    "sale": 3,
+    "revenue ": false,
+    "locationId": 39,
+    "adminId": 3
+  },
+  {
+    "restaurantID": 23,
+    "name": "CulturalCulinary",
+    "phoneNumber": "368-909-6445",
+    "performance": "Immerse yourself in cultural flavors that transport you to distant lands.",
+    "sale": 2,
+    "revenue ": false,
+    "locationId": 4,
+    "adminId": 5
+  },
+  {
+    "restaurantID": 24,
+    "name": "TranquilRetreat",
+    "phoneNumber": "760-130-1075",
+    "performance": "A tranquil oasis where simplicity meets culinary excellence in a serene setting.",
+    "sale": 1,
+    "revenue ": false,
+    "locationId": 36,
+    "adminId": 24
+  },
+  {
+    "restaurantID": 25,
+    "name": "FlavorfulJourney",
+    "phoneNumber": "939-439-6196",
+    "performance": "Embark on a flavorful journey with a menu that celebrates diverse culinary traditions.",
+    "sale": 2,
+    "revenue ": false,
+    "locationId": 20,
+    "adminId": 27
+  },
+  {
+    "restaurantID": 26,
+    "name": "FusionFinesse",
+    "phoneNumber": "479-689-3289",
+    "performance": "A fusion of culinary finesse that elevates your dining experience to new heights.",
+    "sale": 1,
+    "revenue ": false,
+    "locationId": 23,
+    "adminId": 21
+  },
+  {
+    "restaurantID": 27,
+    "name": "FlavorfulHarbor",
+    "phoneNumber": "420-343-3174",
+    "performance": "An enchanting harbor of flavors where culinary magic is created with every dish.",
+    "sale": 3,
+    "revenue ": false,
+    "locationId": 25,
+    "adminId": 10
+  },
+  {
+    "restaurantID": 28,
+    "name": "ArtisticBites",
+    "phoneNumber": "765-930-3766",
+    "performance": "Indulge in artistic creations that turn every meal into a masterpiece.",
+    "sale": 5,
+    "revenue ": true,
+    "locationId": 22,
+    "adminId": 30
+  },
+  {
+    "restaurantID": 29,
+    "name": "CoastalRetreatCafe",
+    "phoneNumber": "709-874-0743",
+    "performance": "Escape to coastal flavors and seaside ambiance for a taste of paradise.",
+    "sale": 3,
+    "revenue ": false,
+    "locationId": 40,
+    "adminId": 10
+  },
+  {
+    "restaurantID": 30,
+    "name": "GastronomicElegance",
+    "phoneNumber": "652-373-5272",
+    "performance": "Elegance meets gastronomy in every dish, creating an unforgettable dining experience.",
+    "sale": 1,
+    "revenue ": false,
+    "locationId": 31,
+    "adminId": 10
+  },
+  {
+    "restaurantID": 31,
+    "name": "CulinarySerendipity",
+    "phoneNumber": "263-209-5705",
+    "performance": "Experience serendipity with every bite as our culinary creations surprise and delight.",
+    "sale": 1,
+    "revenue ": false,
+    "locationId": 16,
+    "adminId": 13
+  },
+  {
+    "restaurantID": 32,
+    "name": "FlavorsOfImagination",
+    "phoneNumber": "813-704-1810",
+    "performance": "Let your imagination roam as you savor dishes that ignite your taste buds.",
+    "sale": 2,
+    "revenue ": false,
+    "locationId": 10,
+    "adminId": 14
+  },
+  {
+    "restaurantID": 33,
+    "name": "MysticalCulinaryJourney",
+    "phoneNumber": "570-467-5977",
+    "performance": "Embark on a mystical journey of culinary wonder with each unique dish.",
+    "sale": 1,
+    "revenue ": false,
+    "locationId": 11,
+    "adminId": 3
+  },
+  {
+    "restaurantID": 34,
+    "name": "EpicureanFusion",
+    "phoneNumber": "439-875-3241",
+    "performance": "Fusion of epicurean delights that blend seamlessly to create extraordinary flavors.",
+    "sale": 5,
+    "revenue ": true,
+    "locationId": 4,
+    "adminId": 17
+  },
+  {
+    "restaurantID": 35,
+    "name": "WholesomeHaven",
+    "phoneNumber": "593-344-0455",
+    "performance": "Savor wholesome and nutritious dishes that delight both the palate and the soul.",
+    "sale": 3,
+    "revenue ": false,
+    "locationId": 37,
+    "adminId": 2
+  },
+  {
+    "restaurantID": 36,
+    "name": "EnchantedTaste",
+    "phoneNumber": "317-334-5055",
+    "performance": "An enchanting realm of flavors that captivate your senses with every bite.",
+    "sale": 5,
+    "revenue ": true,
+    "locationId": 12,
+    "adminId": 20
+  },
+  {
+    "restaurantID": 37,
+    "name": "CosmopolitanCuisine",
+    "phoneNumber": "773-676-8874",
+    "performance": "Experience cosmopolitan flavors that reflect the global culinary diversity.",
+    "sale": 2,
+    "revenue ": false,
+    "locationId": 6,
+    "adminId": 34
+  },
+  {
+    "restaurantID": 38,
+    "name": "GourmetGrove",
+    "phoneNumber": "161-125-6298",
+    "performance": "Nestled in a grove of culinary delights, offering gourmet experiences that astound.",
+    "sale": 3,
+    "revenue ": false,
+    "locationId": 17,
+    "adminId": 11
+  },
+  {
+    "restaurantID": 39,
+    "name": "Nature'sBounty",
+    "phoneNumber": "802-492-9865",
+    "performance": "Celebrate the bounty of nature with dishes that showcase freshness and flavor.",
+    "sale": 5,
+    "revenue ": true,
+    "locationId": 39,
+    "adminId": 30
+  },
+  {
+    "restaurantID": 40,
+    "name": "SerenityBites",
+    "phoneNumber": "254-153-8636",
+    "performance": "Find serenity in every bite as you indulge in culinary creations that soothe the soul.",
+    "sale": 1,
+    "revenue ": false,
+    "locationId": 20,
+    "adminId": 28
+  }
+]

@@ -1,0 +1,404 @@
+[
+  {
+    "FeedBackId": 1,
+    "AdminId": 14,
+    "FeedBack": "Effective management and great customer service, highly recommended.",
+    "Rating": 1.6,
+    "PhoneNumber": "561-865-8746",
+    "TransactionFee": 39,
+    "SupportPolicy": "We are dedicated to providing excellent customer service and resolving your inquiries efficiently.",
+    "LegalStatus": false
+  },
+  {
+    "FeedBackId": 2,
+    "AdminId": 16,
+    "FeedBack": "Needs improvement in responsiveness and problem-solving skills.",
+    "Rating": 0.1,
+    "PhoneNumber": "650-137-6719",
+    "TransactionFee": 79,
+    "SupportPolicy": "Our commitment is to address your concerns promptly and find effective solutions.",
+    "LegalStatus": true
+  },
+  {
+    "FeedBackId": 3,
+    "AdminId": 21,
+    "FeedBack": "Good effort but lacks in strategic planning and execution.",
+    "Rating": 0.4,
+    "PhoneNumber": "607-324-6246",
+    "TransactionFee": 39,
+    "SupportPolicy": "We are refining our strategies to improve execution and service delivery.",
+    "LegalStatus": true
+  },
+  {
+    "FeedBackId": 4,
+    "AdminId": 27,
+    "FeedBack": "Strong in operational management, could be more innovative.",
+    "Rating": 0.5,
+    "PhoneNumber": "841-782-0391",
+    "TransactionFee": 92,
+    "SupportPolicy": "We excel in operations and are exploring innovative approaches to enhance our services.",
+    "LegalStatus": true
+  },
+  {
+    "FeedBackId": 5,
+    "AdminId": 21,
+    "FeedBack": "Average performance, needs to focus more on customer engagement.",
+    "Rating": 2.2,
+    "PhoneNumber": "371-706-5182",
+    "TransactionFee": 76,
+    "SupportPolicy": "We are actively working on enhancing customer engagement in our services.",
+    "LegalStatus": true
+  },
+  {
+    "FeedBackId": 6,
+    "AdminId": 38,
+    "FeedBack": "Excellent in crisis management, very reliable and efficient.",
+    "Rating": 1.5,
+    "PhoneNumber": "937-310-6442",
+    "TransactionFee": 56,
+    "SupportPolicy": "You can count on us for reliable and efficient crisis management services.",
+    "LegalStatus": false
+  },
+  {
+    "FeedBackId": 7,
+    "AdminId": 4,
+    "FeedBack": "Consistently performs well, great team management skills.",
+    "Rating": 0.2,
+    "PhoneNumber": "885-588-3908",
+    "TransactionFee": 37,
+    "SupportPolicy": "We maintain consistent performance and excel in team management.",
+    "LegalStatus": true
+  },
+  {
+    "FeedBackId": 8,
+    "AdminId": 2,
+    "FeedBack": "Struggles with timely decision-making, needs improvement.",
+    "Rating": 4.7,
+    "PhoneNumber": "451-907-4465",
+    "TransactionFee": 93,
+    "SupportPolicy": "We are actively improving our decision-making process for timeliness and efficiency.",
+    "LegalStatus": true
+  },
+  {
+    "FeedBackId": 9,
+    "AdminId": 34,
+    "FeedBack": "Good team collaboration but slow in decision-making.",
+    "Rating": 3.1,
+    "PhoneNumber": "456-873-2348",
+    "TransactionFee": 49,
+    "SupportPolicy": "We prioritize teamwork while enhancing decision-making efficiency.",
+    "LegalStatus": true
+  },
+  {
+    "FeedBackId": 10,
+    "AdminId": 39,
+    "FeedBack": "Effective communication and client relations, highly efficient.",
+    "Rating": 1.7,
+    "PhoneNumber": "822-422-4096",
+    "TransactionFee": 33,
+    "SupportPolicy": "Our strength lies in communication and maintaining high efficiency in client relations.",
+    "LegalStatus": true
+  },
+  {
+    "FeedBackId": 11,
+    "AdminId": 36,
+    "FeedBack": "Shows potential in customer service, but needs more experience.",
+    "Rating": 4.8,
+    "PhoneNumber": "759-746-5169",
+    "TransactionFee": 7,
+    "SupportPolicy": "We acknowledge potential in customer service and are committed to gaining more experience.",
+    "LegalStatus": true
+  },
+  {
+    "FeedBackId": 12,
+    "AdminId": 26,
+    "FeedBack": "Strong in administrative tasks, but lacks creative approach.",
+    "Rating": 4.9,
+    "PhoneNumber": "792-473-5926",
+    "TransactionFee": 16,
+    "SupportPolicy": "We excel in administrative tasks and are working on introducing a more creative approach.",
+    "LegalStatus": true
+  },
+  {
+    "FeedBackId": 13,
+    "AdminId": 26,
+    "FeedBack": "Capable in handling tasks, needs to improve efficiency.",
+    "Rating": 2.9,
+    "PhoneNumber": "733-130-4327",
+    "TransactionFee": 26,
+    "SupportPolicy": "We aim to improve efficiency while maintaining our capability in handling tasks.",
+    "LegalStatus": false
+  },
+  {
+    "FeedBackId": 14,
+    "AdminId": 14,
+    "FeedBack": "Effective in customer relations, could improve in strategic areas.",
+    "Rating": 3.6,
+    "PhoneNumber": "968-508-6850",
+    "TransactionFee": 83,
+    "SupportPolicy": "We focus on effective customer relations and are working to enhance our strategic capabilities.",
+    "LegalStatus": false
+  },
+  {
+    "FeedBackId": 15,
+    "AdminId": 7,
+    "FeedBack": "Great leadership skills, but needs to be more proactive.",
+    "Rating": 3.0,
+    "PhoneNumber": "690-163-0022",
+    "TransactionFee": 65,
+    "SupportPolicy": "We recognize our leadership skills and strive to be more proactive in our approach.",
+    "LegalStatus": false
+  },
+  {
+    "FeedBackId": 16,
+    "AdminId": 16,
+    "FeedBack": "Good operational skills, needs to improve in customer engagement.",
+    "Rating": 3.3,
+    "PhoneNumber": "764-762-7877",
+    "TransactionFee": 75,
+    "SupportPolicy": "Our strength lies in operational skills, and we are enhancing customer engagement efforts.",
+    "LegalStatus": false
+  },
+  {
+    "FeedBackId": 17,
+    "AdminId": 16,
+    "FeedBack": "Efficient in task management, but lacks innovation.",
+    "Rating": 1.3,
+    "PhoneNumber": "751-950-2024",
+    "TransactionFee": 100,
+    "SupportPolicy": "We efficiently manage tasks and are actively exploring innovative approaches.",
+    "LegalStatus": false
+  },
+  {
+    "FeedBackId": 18,
+    "AdminId": 28,
+    "FeedBack": "Highly skilled in financial management, very reliable.",
+    "Rating": 4.8,
+    "PhoneNumber": "542-226-1164",
+    "TransactionFee": 17,
+    "SupportPolicy": "We are highly skilled in financial management and prioritize reliability.",
+    "LegalStatus": true
+  },
+  {
+    "FeedBackId": 19,
+    "AdminId": 23,
+    "FeedBack": "Needs to develop better strategies for team management.",
+    "Rating": 1.1,
+    "PhoneNumber": "724-224-3144",
+    "TransactionFee": 68,
+    "SupportPolicy": "We are actively developing better team management strategies.",
+    "LegalStatus": true
+  },
+  {
+    "FeedBackId": 20,
+    "AdminId": 10,
+    "FeedBack": "Adaptable and proactive in handling challenges.",
+    "Rating": 3.0,
+    "PhoneNumber": "740-509-7555",
+    "TransactionFee": 3,
+    "SupportPolicy": "Our adaptability and proactive approach are key strengths in handling challenges.",
+    "LegalStatus": true
+  },
+  {
+    "FeedBackId": 21,
+    "AdminId": 2,
+    "FeedBack": "Shows promise in leadership but needs more experience.",
+    "Rating": 4.8,
+    "PhoneNumber": "759-746-5169",
+    "TransactionFee": 7,
+    "SupportPolicy": "We acknowledge leadership potential and are dedicated to gaining more experience.",
+    "LegalStatus": true
+  },
+  {
+    "FeedBackId": 22,
+    "AdminId": 14,
+    "FeedBack": "Strong in customer engagement and efficient operations.",
+    "Rating": 4.9,
+    "PhoneNumber": "792-473-5926",
+    "TransactionFee": 16,
+    "SupportPolicy": "We excel in customer engagement and ensure efficient operations.",
+    "LegalStatus": true
+  },
+  {
+    "FeedBackId": 23,
+    "AdminId": 23,
+    "FeedBack": "Effective communicator but needs improvement in strategy.",
+    "Rating": 2.9,
+    "PhoneNumber": "733-130-4327",
+    "TransactionFee": 26,
+    "SupportPolicy": "We prioritize effective communication and are working on refining our strategic approach.",
+    "LegalStatus": false
+  },
+  {
+    "FeedBackId": 24,
+    "AdminId": 31,
+    "FeedBack": "Highly responsive and dedicated to customer satisfaction.",
+    "Rating": 3.6,
+    "PhoneNumber": "968-508-6850",
+    "TransactionFee": 83,
+    "SupportPolicy": "We are highly responsive and dedicated to ensuring your satisfaction.",
+    "LegalStatus": false
+  },
+  {
+    "FeedBackId": 25,
+    "AdminId": 9,
+    "FeedBack": "Needs more focus on efficient workflow and management.",
+    "Rating": 3.0,
+    "PhoneNumber": "690-163-0022",
+    "TransactionFee": 65,
+    "SupportPolicy": "We are actively focusing on improving workflow efficiency and effective management.",
+    "LegalStatus": false
+  },
+  {
+    "FeedBackId": 26,
+    "AdminId": 37,
+    "FeedBack": "Shows potential in customer service, but lacks consistency.",
+    "Rating": 3.3,
+    "PhoneNumber": "764-762-7877",
+    "TransactionFee": 75,
+    "SupportPolicy": "We recognize potential in customer service and are working on maintaining consistency.",
+    "LegalStatus": false
+  },
+  {
+    "FeedBackId": 27,
+    "AdminId": 3,
+    "FeedBack": "Efficient in handling complex tasks and problems.",
+    "Rating": 1.3,
+    "PhoneNumber": "751-950-2024",
+    "TransactionFee": 100,
+    "SupportPolicy": "We efficiently handle complex tasks and actively seek innovative solutions.",
+    "LegalStatus": false
+  },
+  {
+    "FeedBackId": 28,
+    "AdminId": 26,
+    "FeedBack": "Good at operational tasks, needs to improve in strategy.",
+    "Rating": 4.8,
+    "PhoneNumber": "542-226-1164",
+    "TransactionFee": 17,
+    "SupportPolicy": "We excel in operational tasks and are enhancing our strategic capabilities.",
+    "LegalStatus": true
+  },
+  {
+    "FeedBackId": 29,
+    "AdminId": 5,
+    "FeedBack": "Competent in regular duties, innovative approach needed.",
+    "Rating": 1.1,
+    "PhoneNumber": "724-224-3144",
+    "TransactionFee": 68,
+    "SupportPolicy": "We are competent in regular duties and actively exploring innovative approaches.",
+    "LegalStatus": true
+  },
+  {
+    "FeedBackId": 30,
+    "AdminId": 31,
+    "FeedBack": "Excellent in strategic planning and team management.",
+    "Rating": 3.0,
+    "PhoneNumber": "740-509-7555",
+    "TransactionFee": 3,
+    "SupportPolicy": "Our strength lies in strategic planning and effective team management.",
+    "LegalStatus": true
+  },
+  {
+    "FeedBackId": 31,
+    "AdminId": 24,
+    "FeedBack": "Strong leadership skills, effective in decision making.",
+    "Rating": 4.8,
+    "PhoneNumber": "759-746-5169",
+    "TransactionFee": 7,
+    "SupportPolicy": "We recognize our strong leadership skills and effective decision-making capabilities.",
+    "LegalStatus": true
+  },
+    {
+    "FeedBackId": 32,
+    "AdminId": 32,
+    "FeedBack": "Adequate performance, but can improve in customer relations.",
+    "Rating": 4.9,
+    "PhoneNumber": "792-473-5926",
+    "TransactionFee": 16,
+    "SupportPolicy": "We aim to maintain adequate performance while improving customer relations.",
+    "LegalStatus": true
+  },
+  {
+    "FeedBackId": 33,
+    "AdminId": 2,
+    "FeedBack": "Needs to develop better communication and team skills.",
+    "Rating": 2.9,
+    "PhoneNumber": "733-130-4327",
+    "TransactionFee": 26,
+    "SupportPolicy": "We are actively developing better communication and team-building skills.",
+    "LegalStatus": false
+  },
+  {
+    "FeedBackId": 34,
+    "AdminId": 19,
+    "FeedBack": "Efficient in task management, needs to focus on innovation.",
+    "Rating": 3.6,
+    "PhoneNumber": "968-508-6850",
+    "TransactionFee": 83,
+    "SupportPolicy": "Efficiency in task management remains our priority while exploring innovative solutions.",
+    "LegalStatus": false
+  },
+  {
+    "FeedBackId": 35,
+    "AdminId": 15,
+    "FeedBack": "Good at handling routine tasks, needs to improve in crisis management.",
+    "Rating": 3.0,
+    "PhoneNumber": "690-163-0022",
+    "TransactionFee": 65,
+    "SupportPolicy": "We handle routine tasks well and are working on enhancing crisis management capabilities.",
+    "LegalStatus": false
+  },
+  {
+    "FeedBackId": 36,
+    "AdminId": 35,
+    "FeedBack": "Shows potential in strategic planning, but lacks execution.",
+    "Rating": 3.3,
+    "PhoneNumber": "764-762-7877",
+    "TransactionFee": 75,
+    "SupportPolicy": "We see potential in strategic planning and are focused on improving execution.",
+    "LegalStatus": false
+  },
+  {
+    "FeedBackId": 37,
+    "AdminId": 14,
+    "FeedBack": "Effective in team leadership, great at problem-solving.",
+    "Rating": 1.3,
+    "PhoneNumber": "751-950-2024",
+    "TransactionFee": 100,
+    "SupportPolicy": "We are effective in team leadership and excel in problem-solving.",
+    "LegalStatus": false
+  },
+  {
+    "FeedBackId": 38,
+    "AdminId": 13,
+    "FeedBack": "Capable and efficient, but needs to work on innovation.",
+    "Rating": 4.8,
+    "PhoneNumber": "542-226-1164",
+    "TransactionFee": 17,
+    "SupportPolicy": "We are capable and efficient, continuously striving to innovate.",
+    "LegalStatus": true
+  },
+  {
+    "FeedBackId": 39,
+    "AdminId": 1,
+    "FeedBack": "Strong in customer service and operational efficiency.",
+    "Rating": 1.1,
+    "PhoneNumber": "724-224-3144",
+    "TransactionFee": 68,
+    "SupportPolicy": "We excel in customer service and operational efficiency.",
+    "LegalStatus": true
+  },
+  {
+    "FeedBackId": 40,
+    "AdminId": 31,
+    "FeedBack": "Highly skilled in customer relations and management.",
+    "Rating": 3.0,
+    "PhoneNumber": "740-509-7555",
+    "TransactionFee": 3,
+    "SupportPolicy": "We possess high skills in customer relations and effective management.",
+    "LegalStatus": true
+  }
+]
+
+   

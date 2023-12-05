@@ -1,0 +1,322 @@
+[
+  {
+    "OrderId": 1,
+    "CustomerId": 31,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "03/21/2023",
+    "Cost": 72.2,
+    "tax": 4.5125
+  },
+  {
+    "OrderId": 2,
+    "CustomerId": 40,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "06/03/2023",
+    "Cost": 80.3,
+    "tax": 5.01875
+  },
+  {
+    "OrderId": 3,
+    "CustomerId": 22,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "12/28/2022",
+    "Cost": 28.4,
+    "tax": 1.775
+  },
+  {
+    "OrderId": 4,
+    "CustomerId": 3,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "03/26/2023",
+    "Cost": 31.2,
+    "tax": 1.95
+  },
+  {
+    "OrderId": 5,
+    "CustomerId": 12,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "12/24/2022",
+    "Cost": 48.3,
+    "tax": 3.01875
+  },
+  {
+    "OrderId": 6,
+    "CustomerId": 35,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "01/10/2023",
+    "Cost": 27.2,
+    "tax": 1.7
+  },
+  {
+    "OrderId": 7,
+    "CustomerId": 6,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "09/06/2023",
+    "Cost": 89.8,
+    "tax": 5.6125
+  },
+  {
+    "OrderId": 8,
+    "CustomerId": 11,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "10/25/2023",
+    "Cost": 7.2,
+    "tax": 0.45
+  },
+  {
+    "OrderId": 9,
+    "CustomerId": 23,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "07/25/2023",
+    "Cost": 42.4,
+    "tax": 2.65
+  },
+  {
+    "OrderId": 10,
+    "CustomerId": 9,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "05/26/2023",
+    "Cost": 14.4,
+    "tax": 0.9
+  },
+  {
+    "OrderId": 11,
+    "CustomerId": 32,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "06/06/2023",
+    "Cost": 50.2,
+    "tax": 3.1375
+  },
+  {
+    "OrderId": 12,
+    "CustomerId": 5,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "03/04/2023",
+    "Cost": 74.3,
+    "tax": 4.64375
+  },
+  {
+    "OrderId": 13,
+    "CustomerId": 31,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "12/13/2022",
+    "Cost": 57.9,
+    "tax": 3.61875
+  },
+  {
+    "OrderId": 14,
+    "CustomerId": 10,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "12/30/2022",
+    "Cost": 47.9,
+    "tax": 2.99375
+  },
+  {
+    "OrderId": 15,
+    "CustomerId": 34,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "12/28/2022",
+    "Cost": 89.8,
+    "tax": 5.6125
+  },
+  {
+    "OrderId": 16,
+    "CustomerId": 32,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "12/02/2023",
+    "Cost": 86.7,
+    "tax": 5.41875
+  },
+  {
+    "OrderId": 17,
+    "CustomerId": 12,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "11/28/2023",
+    "Cost": 19.0,
+    "tax": 1.1875
+  },
+  {
+    "OrderId": 18,
+    "CustomerId": 17,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "04/27/2023",
+    "Cost": 63.2,
+    "tax": 3.95
+  },
+  {
+    "OrderId": 19,
+    "CustomerId": 7,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "07/08/2023",
+    "Cost": 50.2,
+    "tax": 3.1375
+  },
+  {
+    "OrderId": 20,
+    "CustomerId": 8,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "01/22/2023",
+    "Cost": 58.4,
+    "tax": 3.65
+  },
+  {
+    "OrderId": 21,
+    "CustomerId": 27,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "01/30/2023",
+    "Cost": 69.2,
+    "tax": 4.325
+  },
+  {
+    "OrderId": 22,
+    "CustomerId": 17,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "10/26/2023",
+    "Cost": 48.7,
+    "tax": 3.04375
+  },
+  {
+    "OrderId": 23,
+    "CustomerId": 9,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "10/17/2023",
+    "Cost": 98.1,
+    "tax": 6.13125
+  },
+  {
+    "OrderId": 24,
+    "CustomerId": 27,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "09/18/2023",
+    "Cost": 96.9,
+    "tax": 6.05625
+  },
+  {
+    "OrderId": 25,
+    "CustomerId": 27,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "06/27/2023",
+    "Cost": 96.7,
+    "tax": 6.04375
+  },
+  {
+    "OrderId": 26,
+    "CustomerId": 18,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "11/05/2023",
+    "Cost": 62.3,
+    "tax": 3.89375
+  },
+  {
+    "OrderId": 27,
+    "CustomerId": 30,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "02/19/2023",
+    "Cost": 28.7,
+    "tax": 1.79375
+  },
+  {
+    "OrderId": 28,
+    "CustomerId": 14,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "12/14/2022",
+    "Cost": 85.0,
+    "tax": 5.3125
+  },
+  {
+    "OrderId": 29,
+    "CustomerId": 15,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "09/24/2023",
+    "Cost": 3.8,
+    "tax": 0.2375
+  },
+  {
+    "OrderId": 30,
+    "CustomerId": 5,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "02/22/2023",
+    "Cost": 8.2,
+    "tax": 0.5125
+  },
+  {
+    "OrderId": 31,
+    "CustomerId": 28,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "09/19/2023",
+    "Cost": 38.0,
+    "tax": 2.375
+  },
+  {
+    "OrderId": 32,
+    "CustomerId": 19,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "01/25/2023",
+    "Cost": 32.0,
+    "tax": 2.0
+  },
+  {
+    "OrderId": 33,
+    "CustomerId": 33,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "10/03/2023",
+    "Cost": 84.1,
+    "tax": 5.25625
+  },
+  {
+    "OrderId": 34,
+    "CustomerId": 36,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "06/07/2023",
+    "Cost": 14.7,
+    "tax": 0.91875
+  },
+  {
+    "OrderId": 35,
+    "CustomerId": 16,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "02/24/2023",
+    "Cost": 2.6,
+    "tax": 0.1625
+  },
+  {
+    "OrderId": 36,
+    "CustomerId": 26,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "02/09/2023",
+    "Cost": 10.8,
+    "tax": 0.675
+  },
+  {
+    "OrderId": 37,
+    "CustomerId": 27,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "03/09/2023",
+    "Cost": 2.5,
+    "tax": 0.15625
+  },
+  {
+    "OrderId": 38,
+    "CustomerId": 37,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "09/05/2023",
+    "Cost": 18.0,
+    "tax": 1.125
+  },
+  {
+    "OrderId": 39,
+    "CustomerId": 6,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "12/10/2022",
+    "Cost": 97.8,
+    "tax": 6.1125
+  },
+  {
+    "OrderId": 40,
+    "CustomerId": 25,
+    "PaymentMethod": "mastercard",
+    "TransactionDate": "12/25/2022",
+    "Cost": 11.2,
+    "tax": 0.7
+  }
+]

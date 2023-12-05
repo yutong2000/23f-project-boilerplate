@@ -1,0 +1,362 @@
+[
+  {
+    "AdminId": 1,
+    "Performance": "Efficient in managing complex tasks and delivering results",
+    "Rating": 4.5,
+    "PhoneNumber": "904-605-2501",
+    "TransactionFee": 71,
+    "SupportPolicy": "Comprehensive 24/7 assistance",
+    "LegalStatus": true
+  },
+  {
+    "AdminId": 2,
+    "Performance": "Needs improvement in operational efficiency and client relations",
+    "Rating": 0.7,
+    "PhoneNumber": "626-492-6385",
+    "TransactionFee": 66,
+    "SupportPolicy": "Limited support during business hours only",
+    "LegalStatus": true
+  },
+  {
+    "AdminId": 3,
+    "Performance": "Average performance with scope for better customer engagement",
+    "Rating": 0.9,
+    "PhoneNumber": "401-794-9920",
+    "TransactionFee": 22,
+    "SupportPolicy": "Standard support with email and call options",
+    "LegalStatus": true
+  },
+  {
+    "AdminId": 4,
+    "Performance": "Exemplary leadership skills and exceptional problem-solving abilities",
+    "Rating": 4.8,
+    "PhoneNumber": "573-483-6639",
+    "TransactionFee": 60,
+    "SupportPolicy": "Priority support for critical issues",
+    "LegalStatus": true
+  },
+  {
+    "AdminId": 5,
+    "Performance": "Struggles with timely decision-making and team management",
+    "Rating": 1.2,
+    "PhoneNumber": "863-141-3178",
+    "TransactionFee": 98,
+    "SupportPolicy": "Basic email support only",
+    "LegalStatus": false
+  },
+  {
+    "AdminId": 6,
+    "Performance": "Consistent performer with room for growth in strategic areas",
+    "Rating": 1.8,
+    "PhoneNumber": "979-312-6084",
+    "TransactionFee": 44,
+    "SupportPolicy": "Extended support for weekends and holidays",
+    "LegalStatus": true
+  },
+  {
+    "AdminId": 7,
+    "Performance": "Strong in operational management but lacks innovative strategies",
+    "Rating": 3.3,
+    "PhoneNumber": "966-785-8895",
+    "TransactionFee": 85,
+    "SupportPolicy": "Personalized support for VIP clients",
+    "LegalStatus": false
+  },
+  {
+    "AdminId": 8,
+    "Performance": "Efficient in routine tasks, needs to improve in crisis management",
+    "Rating": 3.9,
+    "PhoneNumber": "204-123-5326",
+    "TransactionFee": 96,
+    "SupportPolicy": "Automated self-service support portal",
+    "LegalStatus": true
+  },
+  {
+    "AdminId": 9,
+    "Performance": "Good at team collaboration but slow in individual tasks",
+    "Rating": 3.1,
+    "PhoneNumber": "649-777-4656",
+    "TransactionFee": 82,
+    "SupportPolicy": "Support via chat and email",
+    "LegalStatus": true
+  },
+  {
+    "AdminId": 10,
+    "Performance": "Adaptable and proactive in handling unexpected challenges",
+    "Rating": 4.2,
+    "PhoneNumber": "206-139-2238",
+    "TransactionFee": 8,
+    "SupportPolicy": "Round-the-clock comprehensive support",
+    "LegalStatus": true
+  },
+  {
+    "AdminId": 11,
+    "Performance": "Efficient in project execution but needs better communication skills",
+    "Rating": 3.5,
+    "PhoneNumber": "498-974-7440",
+    "TransactionFee": 62,
+    "SupportPolicy": "Enhanced support for technical issues",
+    "LegalStatus": false
+  },
+  {
+    "AdminId": 12,
+    "Performance": "Highly skilled in financial management and resource allocation",
+    "Rating": 4.4,
+    "PhoneNumber": "419-719-7839",
+    "TransactionFee": 64,
+    "SupportPolicy": "Support with dedicated account manager",
+    "LegalStatus": true
+  },
+  {
+    "AdminId": 13,
+    "Performance": "Shows potential but needs to improve in time management",
+    "Rating": 2.2,
+    "PhoneNumber": "368-117-3188",
+    "TransactionFee": 20,
+    "SupportPolicy": "Online ticketing system for issue resolution",
+    "LegalStatus": false
+  },
+  {
+    "AdminId": 14,
+    "Performance": "Competent in regular duties but lacks innovation",
+    "Rating": 2.4,
+    "PhoneNumber": "645-273-6045",
+    "TransactionFee": 43,
+    "SupportPolicy": "Basic troubleshooting and guidance support",
+    "LegalStatus": false
+  },
+  {
+    "AdminId": 15,
+    "Performance": "Strong analytical skills and effective in customer relations",
+    "Rating": 4,
+    "PhoneNumber": "203-689-1896",
+    "TransactionFee": 45,
+    "SupportPolicy": "Comprehensive troubleshooting and technical support",
+    "LegalStatus": true
+  },
+  {
+    "AdminId": 16,
+    "Performance": "Versatile and quick to adapt to new technologies",
+    "Rating": 3.9,
+    "PhoneNumber": "539-894-5893",
+    "TransactionFee": 81,
+    "SupportPolicy": "In-depth technical and operational support",
+    "LegalStatus": false
+  },
+  {
+    "AdminId": 17,
+    "Performance": "Capable in handling client queries but lacks efficiency",
+    "Rating": 2.7,
+    "PhoneNumber": "121-227-4226",
+    "TransactionFee": 74,
+    "SupportPolicy": "Email and phone support during business hours",
+    "LegalStatus": false
+  },
+  {
+    "AdminId": 18,
+    "Performance": "Excellent in strategic planning and implementation",
+    "Rating": 4.8,
+    "PhoneNumber": "584-722-9033",
+    "TransactionFee": 82,
+    "SupportPolicy": "Premium 24-hour support with fast response",
+    "LegalStatus": true
+  },
+  {
+    "AdminId": 19,
+    "Performance": "Needs to develop better strategies for team management",
+    "Rating": 1.9,
+    "PhoneNumber": "804-151-4598",
+    "TransactionFee": 22,
+    "SupportPolicy": "Limited support with community forums",
+    "LegalStatus": false
+  },
+  {
+    "AdminId": 20,
+    "Performance": "Good in handling routine tasks, struggles with innovation",
+    "Rating": 1.2,
+    "PhoneNumber": "402-175-4375",
+    "TransactionFee": 5,
+    "SupportPolicy": "Basic support with FAQs and online resources",
+    "LegalStatus": true
+  }
+  {
+    "AdminId": 21,
+    "Performance": "Capable of enhancing customer engagement and operational efficiency",
+    "Rating": 1.6,
+    "PhoneNumber": "561-865-8746",
+    "TransactionFee": 39,
+    "SupportPolicy": "Offers basic support with limited hours",
+    "LegalStatus": false
+  },
+  {
+    "AdminId": 22,
+    "Performance": "Requires improvement in management and strategic planning",
+    "Rating": 0.1,
+    "PhoneNumber": "650-137-6719",
+    "TransactionFee": 79,
+    "SupportPolicy": "Dedicated client service during business hours",
+    "LegalStatus": true
+  },
+  {
+    "AdminId": 23,
+    "Performance": "Adequate performance but needs more innovation",
+    "Rating": 0.4,
+    "PhoneNumber": "607-324-6246",
+    "TransactionFee": 39,
+    "SupportPolicy": "Responsive support with detailed guidance",
+    "LegalStatus": true
+  },
+  {
+    "AdminId": 24,
+    "Performance": "Needs to improve in customer service and responsiveness",
+    "Rating": 0.5,
+    "PhoneNumber": "841-782-0391",
+    "TransactionFee": 92,
+    "SupportPolicy": "Comprehensive digital and phone support",
+    "LegalStatus": true
+  },
+  {
+    "AdminId": 25,
+    "Performance": "Effective in routine tasks, struggles with complex challenges",
+    "Rating": 2.2,
+    "PhoneNumber": "371-706-5182",
+    "TransactionFee": 76,
+    "SupportPolicy": "Focused on customer satisfaction and quick resolution",
+    "LegalStatus": true
+  },
+  {
+    "AdminId": 26,
+    "Performance": "Shows potential in operations but needs better leadership",
+    "Rating": 1.5,
+    "PhoneNumber": "937-310-6442",
+    "TransactionFee": 56,
+    "SupportPolicy": "Standard support with a focus on efficiency",
+    "LegalStatus": false
+  },
+  {
+    "AdminId": 27,
+    "Performance": "Solid performance in administrative tasks, lacking in creativity",
+    "Rating": 0.2,
+    "PhoneNumber": "885-588-3908",
+    "TransactionFee": 37,
+    "SupportPolicy": "Effective problem-solving with timely responses",
+    "LegalStatus": true
+  },
+  {
+    "AdminId": 28,
+    "Performance": "Exceptional in crisis management and strategic decision-making",
+    "Rating": 4.7,
+    "PhoneNumber": "451-907-4465",
+    "TransactionFee": 93,
+    "SupportPolicy": "High-quality, 24/7 customer support",
+    "LegalStatus": true
+  },
+  {
+    "AdminId": 29,
+    "Performance": "Good team player, needs to improve individual performance",
+    "Rating": 3.1,
+    "PhoneNumber": "456-873-2348",
+    "TransactionFee": 49,
+    "SupportPolicy": "Efficient and prompt customer service",
+    "LegalStatus": true
+  },
+  {
+    "AdminId": 30,
+    "Performance": "Competent in regular operations, but lacks innovative approach",
+    "Rating": 1.7,
+    "PhoneNumber": "822-422-4096",
+    "TransactionFee": 33,
+    "SupportPolicy": "Basic support with a focus on reliability",
+    "LegalStatus": true
+  },
+  {
+    "AdminId": 31,
+    "Performance": "Highly efficient in resource management and team leadership",
+    "Rating": 4.8,
+    "PhoneNumber": "759-746-5169",
+    "TransactionFee": 7,
+    "SupportPolicy": "Prompt and effective support for all queries",
+    "LegalStatus": true
+  },
+  {
+    "AdminId": 32,
+    "Performance": "Outstanding in strategic planning and execution",
+    "Rating": 4.9,
+    "PhoneNumber": "792-473-5926",
+    "TransactionFee": 16,
+    "SupportPolicy": "Comprehensive, multi-channel customer support",
+    "LegalStatus": true
+  },
+  {
+    "AdminId": 33,
+    "Performance": "Adept in handling customer relations, needs efficiency in processes",
+    "Rating": 2.9,
+    "PhoneNumber": "733-130-4327",
+    "TransactionFee": 26,
+    "SupportPolicy": "Dedicated support with a focus on customer satisfaction",
+    "LegalStatus": false
+  },
+  {
+    "AdminId": 34,
+    "Performance": "Effective communicator and team coordinator",
+    "Rating": 3.6,
+    "PhoneNumber": "968-508-6850",
+    "TransactionFee": 83,
+    "SupportPolicy": "Quality support with an emphasis on quick resolution",
+    "LegalStatus": false
+  },
+  {
+    "AdminId": 35,
+    "Performance": "Consistent in regular tasks, needs to develop strategic skills",
+    "Rating": 3.0,
+    "PhoneNumber": "690-163-0022",
+    "TransactionFee": 65,
+    "SupportPolicy": "Efficient and reliable customer assistance",
+    "LegalStatus": false
+  },
+  {
+    "AdminId": 36,
+    "Performance": "Skilled in operations, requires growth in customer engagement",
+    "Rating": 3.3,
+    "PhoneNumber": "764-762-7877",
+    "TransactionFee": 75,
+    "SupportPolicy": "Round-the-clock support, focusing on customer needs",
+    "LegalStatus": false
+  },
+  {
+    "AdminId": 37,
+    "Performance": "Competent in technical aspects, needs to improve in communication",
+    "Rating": 1.3,
+    "PhoneNumber": "751-950-2024",
+    "TransactionFee": 100,
+    "SupportPolicy": "Quality support with technical and operational focus",
+    "LegalStatus": false
+  },
+  {
+    "AdminId": 38,
+    "Performance": "Excellent in team management and client servicing",
+    "Rating": 4.8,
+    "PhoneNumber": "542-226-1164",
+    "TransactionFee": 17,
+    "SupportPolicy": "Highly responsive and comprehensive customer service",
+    "LegalStatus": true
+  },
+  {
+    "AdminId": 39,
+    "Performance": "Needs to enhance efficiency in administrative tasks",
+    "Rating": 1.1,
+    "PhoneNumber": "724-224-3144",
+    "TransactionFee": 68,
+    "SupportPolicy": "Customer-focused support with personalized solutions",
+    "LegalStatus": true
+  },
+  {
+    "AdminId": 40,
+    "Performance": "Good at routine management, requires strategic thinking skills",
+    "Rating": 3.0,
+    "PhoneNumber": "740-509-7555",
+    "TransactionFee": 3,
+    "SupportPolicy": "Comprehensive support with a focus on efficiency",
+    "LegalStatus": true
+  }
+]

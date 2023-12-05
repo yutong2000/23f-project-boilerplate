@@ -1,0 +1,242 @@
+[
+  {
+    "FoodId": 1,
+    "FoodName": "Spaghetti Carbonara",
+    "availability": true,
+    "Price": 8
+  },
+  {
+    "FoodId": 2,
+    "FoodName": "Margherita Pizza",
+    "availability": false,
+    "Price": 65
+  },
+  {
+    "FoodId": 3,
+    "FoodName": "Chicken Alfredo",
+    "availability": true,
+    "Price": 46
+  },
+  {
+    "FoodId": 4,
+    "FoodName": "Filet Mignon Steak",
+    "availability": true,
+    "Price": 90
+  },
+  {
+    "FoodId": 5,
+    "FoodName": "Salmon Teriyaki",
+    "availability": true,
+    "Price": 73
+  },
+  {
+    "FoodId": 6,
+    "FoodName": "Caesar Salad",
+    "availability": false,
+    "Price": 89
+  },
+  {
+    "FoodId": 7,
+    "FoodName": "Sushi Platter",
+    "availability": false,
+    "Price": 18
+  },
+  {
+    "FoodId": 8,
+    "FoodName": "Vegetable Stir-Fry",
+    "availability": false,
+    "Price": 62
+  },
+  {
+    "FoodId": 9,
+    "FoodName": "Shrimp Scampi",
+    "availability": false,
+    "Price": 75
+  },
+  {
+    "FoodId": 10,
+    "FoodName": "Beef Tacos",
+    "availability": false,
+    "Price": 44
+  },
+  {
+    "FoodId": 11,
+    "FoodName": "Grilled Salmon",
+    "availability": false,
+    "Price": 27
+  },
+  {
+    "FoodId": 12,
+    "FoodName": "Mushroom Risotto",
+    "availability": false,
+    "Price": 34
+  },
+  {
+    "FoodId": 13,
+    "FoodName": "Chicken Parmesan",
+    "availability": false,
+    "Price": 46
+  },
+  {
+    "FoodId": 14,
+    "FoodName": "Caprese Salad",
+    "availability": false,
+    "Price": 23
+  },
+  {
+    "FoodId": 15,
+    "FoodName": "Lobster Bisque",
+    "availability": false,
+    "Price": 92
+  },
+  {
+    "FoodId": 16,
+    "FoodName": "BBQ Ribs",
+    "availability": false,
+    "Price": 43
+  },
+  {
+    "FoodId": 17,
+    "FoodName": "Vegetable Lasagna",
+    "availability": false,
+    "Price": 71
+  },
+  {
+    "FoodId": 18,
+    "FoodName": "Margherita Pizza",
+    "availability": true,
+    "Price": 11
+  },
+  {
+    "FoodId": 19,
+    "FoodName": "Crispy Chicken Wings",
+    "availability": false,
+    "Price": 28
+  },
+  {
+    "FoodId": 20,
+    "FoodName": "Sushi Rolls",
+    "availability": false,
+    "Price": 46
+  },
+  {
+    "FoodId": 21,
+    "FoodName": "Beef Stir-Fry",
+    "availability": false,
+    "Price": 69
+  },
+  {
+    "FoodId": 22,
+    "FoodName": "Penne Alfredo",
+    "availability": false,
+    "Price": 36
+  },
+  {
+    "FoodId": 23,
+    "FoodName": "Chicken Noodle Soup",
+    "availability": false,
+    "Price": 5
+  },
+  {
+    "FoodId": 24,
+    "FoodName": "Vegetable Fajitas",
+    "availability": false,
+    "Price": 37
+  },
+  {
+    "FoodId": 25,
+    "FoodName": "Teriyaki Chicken Bowl",
+    "availability": false,
+    "Price": 48
+  },
+  {
+    "FoodId": 26,
+    "FoodName": "Pesto Pasta",
+    "availability": false,
+    "Price": 31
+  },
+  {
+    "FoodId": 27,
+    "FoodName": "Grilled Ribeye Steak",
+    "availability": true,
+    "Price": 82
+  },
+  {
+    "FoodId": 28,
+    "FoodName": "Margherita Pizza",
+    "availability": true,
+    "Price": 21
+  },
+  {
+    "FoodId": 29,
+    "FoodName": "Baked Ziti",
+    "availability": false,
+    "Price": 47
+  },
+  {
+    "FoodId": 30,
+    "FoodName": "Chicken Caesar Salad",
+    "availability": true,
+    "Price": 10
+  },
+  {
+    "FoodId": 31,
+    "FoodName": "Cheeseburger",
+    "availability": true,
+    "Price": 2
+  },
+  {
+    "FoodId": 32,
+    "FoodName": "Shrimp Scampi",
+    "availability": false,
+    "Price": 51
+  },
+  {
+    "FoodId": 33,
+    "FoodName": "New York Strip Steak",
+    "availability": true,
+    "Price": 96
+  },
+  {
+    "FoodId": 34,
+    "FoodName": "Vegetable Sushi Rolls",
+    "availability": false,
+    "Price": 45
+  },
+  {
+    "FoodId": 35,
+    "FoodName": "Clam Chowder",
+    "availability": false,
+    "Price": 6
+  },
+  {
+    "FoodId": 36,
+    "FoodName": "Grilled Chicken Sandwich",
+    "availability": true,
+    "Price": 56
+  },
+  {
+    "FoodId": 37,
+    "FoodName": "Bacon Wrapped Scallops",
+    "availability": false,
+    "Price": 97
+  },
+  {
+    "FoodId": 38,
+    "FoodName": "Beef and Broccoli",
+    "availability": true,
+    "Price": 94
+  },
+  {
+    "FoodId": 39,
+    "FoodName": "Vegetable Pad Thai",
+    "availability": false,
+    "Price": 63
+  },
+  {
+    "FoodId": 40,
+    "FoodName": "Seafood Paella",
+    "availability": false,
+    "Price": 65
+  }
+]
