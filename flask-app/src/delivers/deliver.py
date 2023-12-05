@@ -1,37 +1,49 @@
-from flask import Blueprint, request, jsonify
-# Assume 'db' is your database connection module
+from flask import Blueprint, request, jsonify, make_response, current_app
+import json
+from src import db
 
-api = Blueprint('api', __name__)
+driver = Blueprint('driver', __name__)
 
-# Example of GET /delivery_requests
-@api.route('/delivery_requests', methods=['GET'])
+@driver.route('/drivers', methods=['GET'])
+def get_drivers():
+    cursor = db.get_db().cursor()
+    cursor.execute('SELECT DriverID, Availability, Insurance, Info, PhoneNumber, VehicleID, Lisence')
+    column_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(column_headers, row)))
+
+    return jsonify(json_data)
+
+
+@driver.route('/delivery_requests', methods=['GET'])
 def get_delivery_requests():
-    # This would normally involve a database query to fetch delivery requests
-    # For demonstration, returning a static response
-    return jsonify({"message": "List of all delivery requests"})
+    
+    query = '''
+        SELECT Availability, DriverID, PhoneNumber, VehicleID
+        FROM driver
+        ORDER BY DriverID
+    '''
 
-# Example of PUT /delivery_status/{deliveryID}
-@api.route('/delivery_status/<int:deliveryID>', methods=['PUT'])
-def update_delivery_status(deliveryID):
-    # Here you would update the status in the database
-    # Extracting status from request for demonstration
-    status = request.json.get('status')
-    return jsonify({"message": f"Updated status for delivery ID {deliveryID} to {status}"})
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
 
-# Example of GET /vehicle_info
-@api.route('/vehicle_info', methods=['GET'])
-def get_vehicle_info():
-    # Fetch vehicle info from database
-    return jsonify({"message": "Vehicle information"})
+    column_headers = [x[0] for x in cursor.description]
 
-# Example of POST /delivery-rating/{deliveryId}
-@api.route('/delivery-rating/<int:deliveryId>', methods=['POST'])
-def post_delivery_rating(deliveryId):
-    # Save delivery rating in database
-    rating = request.json.get('rating')
-    feedback = request.json.get('feedback')
-    return jsonify({"message": f"Received rating {rating} for delivery ID {deliveryId}"})
+    json_data = []
 
-# Add more routes based on the API matrix
+    theData = cursor.fetchall()
 
-# Other necessary Flask app setup and run commands...
+    for row in theData:
+        json_data.append(dict(zip(column_headers, row)))
+    
+    return jsonify(json_data)
+
+@driver.rount('/delivery_status/{deliveryID}', methods=['PUT'])
+def update_deliver_status(deliveryID):
+    query = '''
+        SELECT PickupLocId, DropLocId, DeliveryTime, Delivered
+        FROM Driver_Cus
+        
+    '''
