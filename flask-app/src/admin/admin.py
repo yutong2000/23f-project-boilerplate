@@ -7,7 +7,7 @@ admin = Blueprint('admin', __name__)
 @admin.route('/admin', methods=['GET'])
 def get_admin():
     cursor = db.get_db().cursor()
-    cursor.execute('SELECT AdminId, Performance, Rating, PhoneNumber, TransactionFee, SupportPolicy, LegalStatus, FeedBackId, FeedBack'
+    cursor.execute('SELECT Admin.AdminId, Performance, Rating, PhoneNumber, TransactionFee, SupportPolicy, LegalStatus, FeedBackId, FeedBack'
                    'join Admin_FeedBack on Admin.AdminId = Admin_FeedBack.Admin.AdminId ')
     column_headers = [x[0] for x in cursor.description]
     json_data = []
