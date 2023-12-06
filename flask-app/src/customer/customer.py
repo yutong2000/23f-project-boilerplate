@@ -52,11 +52,13 @@ def add_new_location():
     state = the_data('state')
     city = the_data('city')
     street = the_data('street')
+    apt = the_data('apt')
 
-    query = 'insert into Location (zip, state, city, street) values ("'
+    query = 'insert into Location (zip, state, city, street, apt) values ("'
     query += zip_code + '", "'
     query += state + '", "'
-    query += city + '", '
+    query += city + '", "'
+    query += apt + '", "'
     query += street + ')'
     current_app.logger.info(query)
 
