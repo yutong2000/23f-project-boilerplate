@@ -5,7 +5,6 @@ from src import db
 
 restaurants = Blueprint('restaurants', __name__)
 
-# Get all the products from the database
 @restaurants.route('/restaurant', methods=['GET'])
 def get_restaurant():
     cursor = db.get_db().cursor()
@@ -34,8 +33,7 @@ def get_restaurants_promotions (RestaurantID):
     return jsonify(json_data)
     
 
-# get the top 5 products from the database
-@restaurants.route('/foodname')
+@restaurants.route('/foodname', methods=['GET'])
 def get_manu():
     cursor = db.get_db().cursor()
     query = '''
