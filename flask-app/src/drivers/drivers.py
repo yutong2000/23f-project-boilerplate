@@ -8,7 +8,7 @@ drivers = Blueprint('drivers', __name__)
 def get_drivers():
     cursor = db.get_db().cursor()
     cursor.execute('SELECT DriverId, Availability, Insurance, Info, PhoneNumber, VehicleID, Lisence '
-                   'FROM Driver join Driver_VehicleId'
+                   'FROM Driver join Driver_VehicleId '
                    'on Driver.DriverId = Driver_VehicleId.DriverId')
     column_headers = [x[0] for x in cursor.description]
     json_data = []
