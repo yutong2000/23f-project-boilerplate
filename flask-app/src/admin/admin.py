@@ -17,7 +17,7 @@ def get_admin():
 
     return jsonify(json_data)
 
-@admin.route('/customer', methods=['GET'])
+@admin.route('/admin/customer', methods=['GET'])
 def get_customers():
     cursor = db.get_db().cursor()
     cursor.execute(
@@ -39,7 +39,7 @@ def get_customers():
     the_response.mimetype = 'application/json'
     return the_response
 
-@admin.route('/restaurant', methods=['GET'])
+@admin.route('/admin/restaurant', methods=['GET'])
 def get_restaurant():
     cursor = db.get_db().cursor()
     cursor.execute('SELECT Restaurant.restaurantID, name, Restaurant.phoneNumber, Restaurant.performance, sale, revenue, Location.zip, Location.state, Location.city, Location.street, Location.apt, Restaurant.adminId '
