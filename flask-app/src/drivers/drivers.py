@@ -2,9 +2,9 @@ from flask import Blueprint, request, jsonify, make_response, current_app
 import json
 from src import db
 
-driver = Blueprint('driver', __name__)
+drivers = Blueprint('driver', __name__)
 
-@driver.route('/drivers', methods=['GET'])
+@drivers.route('/drivers', methods=['GET'])
 def get_drivers():
     cursor = db.get_db().cursor()
     cursor.execute('SELECT DriverID, Availability, Insurance, Info, PhoneNumber, VehicleID, Lisence')
@@ -17,7 +17,7 @@ def get_drivers():
     return jsonify(json_data)
 
 
-@driver.route('/delivery_requests', methods=['GET'])
+@drivers.route('/delivery_requests', methods=['GET'])
 def get_delivery_requests():
     
     query = '''
@@ -34,7 +34,7 @@ def get_delivery_requests():
         json_data.append(dict(zip(column_headers, row)))
     return jsonify(json_data)
 
-@driver.route('/delivery_status/{deliveryID}', methods=['PUT'])
+@drivers.route('/delivery_status/{deliveryID}', methods=['PUT'])
 def update_deliver_status(deliveryID):
     Delivered = False
     query = '''
@@ -48,7 +48,7 @@ def update_deliver_status(deliveryID):
     db.get_db().commit()
 
 
-@driver.route('/driver/<driver_id>/availability', methods=['PUT'])
+@drivers.route('/driver/<driver_id>/availability', methods=['PUT'])
 def update_driver_availability(driver_id):
     availability = request.json['availability']
     cursor = db.get_db().cursor()
