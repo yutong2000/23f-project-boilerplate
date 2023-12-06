@@ -9,7 +9,7 @@ customer = Blueprint('customer', __name__)
 def get_customers():
     cursor = db.get_db().cursor()
     cursor.execute(
-        'select CustomerID, zip, state, city, street, apt, FavoriteRestaurant, FavoriteFood, PhoneNumber, PaymentMethod, DeliveryPerference from Customer join location on Customer.addressId = Location.locationId')
+        'select CustomerID, zip, state, city, street, apt, FavoriteRestaurant, FavoriteFood, PhoneNumber, PaymentMethod, DeliveryPerference from Customer join Location on Customer.addressId = Location.locationId')
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
