@@ -8,7 +8,7 @@ admin = Blueprint('admin', __name__)
 def get_admin():
     cursor = db.get_db().cursor()
     cursor.execute('SELECT AdminId, Performance, Rating, PhoneNumber, TransactionFee, SupportPolicy, LegalStatus, FeedBackId, FeedBack'
-                   'join Admin_FeedBack on Admin.AdminId = Admin_FeedBack.Admin.AdminId')
+                   'join Admin_FeedBack on Admin.AdminId = Admin_FeedBack.Admin.AdminId ')
     column_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
