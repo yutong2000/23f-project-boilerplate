@@ -7,7 +7,7 @@ drivers = Blueprint('drivers', __name__)
 @drivers.route('/drivers', methods=['GET'])
 def get_drivers():
     cursor = db.get_db().cursor()
-    cursor.execute('SELECT DriverId, Availability, Insurance, Info, PhoneNumber, VehicleID, Lisence FROM Driver')
+    cursor.execute('SELECT DriverId, Availability, Insurance, Info, PhoneNumber, VehicleID, Lisence FROM Driver ORDERED BY DriverId')
     column_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
@@ -23,7 +23,7 @@ def get_delivery_requests():
     query = '''
         SELECT Availability, DriverID, PhoneNumber, VehicleID
         FROM driver
-        ORDER BY DriverID
+        ORDER BY DriverId
     '''
     cursor = db.get_db().cursor()
     cursor.execute(query)
