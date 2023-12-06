@@ -42,7 +42,7 @@ CREATE TABLE if not exists Restaurant
 (
     restaurantID int,
     name         varchar(30) NOT NULL,        -- Restaurant name
-    phoneNumber  int         NOT NULL UNIQUE, -- Restaurant phone number
+    phoneNumber  varchar(25)        NOT NULL UNIQUE, -- Restaurant phone number
     performance  varchar(200),                -- evaluate the performance of a Restaurant
     sale         double      NOT NULL,        -- total sale
     revenue      double      NOT NULL,        -- total revenue
@@ -83,7 +83,7 @@ CREATE TABLE if not exists Driver
 (
     DriverId     int,
     Info         varchar(100),
-    PhoneNumber  varchar(15) not null unique,
+    PhoneNumber  varchar(25) not null unique,
     License      varchar(16) not null,
     Insurance    varchar(25),
     Availability boolean     not null,
@@ -109,7 +109,7 @@ CREATE TABLE IF NOT EXISTS Customer
 (
     customerID         int,
     info               varchar(100) NOT NULL,
-    phoneNumber        int          NOT NULL,
+    phoneNumber        varchar(25)          NOT NULL,
     addressId          int          NOT NULL,
     paymentMethod      varchar(20),
     deliveryPreference varchar(100),
