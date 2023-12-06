@@ -20,9 +20,6 @@ def add_restaurant():
     cursor.execute(query)
     db.get_db().commit()
     return 'The restaurant has been added'
-    
-
-    return jsonify(json_data)
 
 @admin.route('/adddriver', methods=['POST'])
 def add_driver():
