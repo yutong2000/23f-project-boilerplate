@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-INSERT INTO restaurants (restaurantID, name, phoneNumber, performance, sale, revenue, locationId, adminId)
-=======
-ALTER TABLE Restaurant
-MODIFy phoneNumber Varchar(255);
-
 INSERT INTO Restaurant (restaurantID, name, phoneNumber, performance, sale, revenue, locationId, adminId)
->>>>>>> f24177bea37d3d4d866297a93777e2689507ff29
 VALUES
 (1, 'SavoryDelights', '267-995-1274', 'A culinary gem offering a diverse menu of gourmet dishes and exceptional service.', 3, true, 5, 10),
 (2, 'BistroElegance', '803-689-2012', 'An intimate dining experience with a menu that blends flavors to perfection.', 3, false, 17, 4),
@@ -46,8 +39,7 @@ VALUES
 (37, 'CosmopolitanCuisine', '773-676-8874', 'Experience cosmopolitan flavors that reflect the global culinary diversity.', 2, false, 6, 34),
 (38, 'GourmetGrove', '161-125-6298', 'Nestled in a grove of culinary delights, offering gourmet experiences that astound.', 3, false, 17, 11),
 (39, 'Nature\'sBounty', '802-492-9865', 'Celebrate the bounty of nature with dishes that showcase freshness and flavor.', 5, true, 39, 30),
-<<<<<<< HEAD
 (40, 'SerenityBites', '254-153-8636', 'Find serenity in every bite as you indulge in culinary creations that soothe the soul.', 1, false, 20, 28);
-=======
-(40, 'SerenityBites', '254-153-8636', 'Find serenity in every bite as you indulge in culinary creations that soothe the soul.', 1, false, 20, 28);
->>>>>>> f24177bea37d3d4d866297a93777e2689507ff29
+
+SELECT *
+FROM Restaurant;

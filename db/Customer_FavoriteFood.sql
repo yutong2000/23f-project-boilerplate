@@ -4,7 +4,8 @@ INSERT INTO Customer_FavoriteFood (CustomerId, FoodId)
 VALUES
 (1, 9),
 (2, 24),
-(3, 32),
+(3, 32
+),
 (4, 12),
 (5, 12),
 (6, 33),
