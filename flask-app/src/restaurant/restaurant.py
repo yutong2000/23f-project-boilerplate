@@ -20,19 +20,17 @@ def get_restaurant():
 
     return jsonify(json_data)
 
-@restaurant.route('/restaurant/<promotions>', methods=['GET'])
-def get_restaurants_promotions (RestaurantID):
-
-    query = 'Availability, Name, Location, Rating, RestaurantsID FROM Restaurant WHERE RestaurantID = ' + str(RestaurantID)
-    current_app.logger.info(query)
-
+@restaurant.route('/restaurant/promotions', methods=['GET'])
+def get_restaurants_promotions():
     cursor = db.get_db().cursor()
-    cursor.execute(query)
+    cursor.execute('SELECT Restaurant.restaurantID, name, sale '
+                   'FROM Restaurant ')
     column_headers = [x[0] for x in cursor.description]
     json_data = []
-    the_data = cursor.fetchall()
-    for row in the_data:
+    theData = cursor.fetchall()
+    for row in theData:
         json_data.append(dict(zip(column_headers, row)))
+
     return jsonify(json_data)
     
 
