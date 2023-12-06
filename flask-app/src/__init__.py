@@ -19,7 +19,7 @@ def create_app():
     app.config['MYSQL_DATABASE_PASSWORD'] = open('/secrets/db_root_password.txt').readline().strip()
     app.config['MYSQL_DATABASE_HOST'] = 'db'
     app.config['MYSQL_DATABASE_PORT'] = 3306
-    app.config['MYSQL_DATABASE_DB'] = 'console'
+    app.config['MYSQL_DATABASE_DB'] = 'GroupWork3200'
 
     # Initialize the database object with the settings above. 
     db.init_app(app)
