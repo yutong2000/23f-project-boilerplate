@@ -19,7 +19,6 @@ def get_customers():
     the_response.mimetype = 'application/json'
     return the_response
 
-# Get customer detail for customer with particular userID
 @customer.route('/customers/<CostomerID>', methods=['GET'])
 def get_customer(CustomerID):
     cursor = db.get_db().cursor()

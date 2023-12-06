@@ -1,6 +1,11 @@
 -- Assuming you have a table named 'Drivers' with the appropriate columns
+ALTER TABLE Driver
+MODIFy phoneNumber Varchar(255);
 
-INSERT INTO Driver (DriverID, Info, PhoneNumber, Lisence, Insurance, Availability, AdminID)
+ALTER TABLE Driver
+MODIFy License Varchar(255);
+
+INSERT INTO Driver (DriverID, Info, PhoneNumber, License, Insurance, Availability, AdminID)
 VALUES
 (1, 'Audi', '449-390-9270', 'WBABV13415J950610', 'Flashspan', true, 13),
 (2, 'Nissan', '271-492-7193', 'JTHBB1BA4C2501494', 'Fliptune', true, 2),
