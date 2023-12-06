@@ -36,7 +36,7 @@ def get_restaurants_promotions (RestaurantID):
     return jsonify(json_data)
     
 
-@restaurant.route('restaurant/manue', methods=['GET'])
+@restaurant.route('restaurant/menu', methods=['GET'])
 def get_manu():
     cursor = db.get_db().cursor()
     query = '''
