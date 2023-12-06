@@ -40,7 +40,7 @@ def get_restaurants_promotions (RestaurantID):
 def get_manu():
     cursor = db.get_db().cursor()
     query = '''
-        SELECT FoodItem_Ava_P.FoodId, FoodItem_Ava_P.FoodName, FoodItem_Ava_P.availability, FoodItem_Ava_P.Price, Restaurant_foodItem.FoodItem 
+        SELECT FoodItem_Ava_P.FoodId, FoodItem_Ava_P.FoodName, FoodItem_Ava_P.availability, FoodItem_Ava_P.Price
         FROM FoodItem_Ava_P join Restaurant_foodItem on FoodItem_Ava_P.FoodId = Restaurant_foodItem.FoodItem
         ORDER BY FoodItem_Ava_P.Price
     '''
