@@ -48,10 +48,10 @@ def customer_add_location():
     the_data = request.json
     current_app.logger.info(the_data)
     
-    zip_code = request.form.get('Zip')
-    state = request.form.get('State')
-    city = request.form.get('City')
-    street = request.form.get('Street')
+    zip_code = the_data('Zip')
+    state = the_data('State')
+    city = the_data('City')
+    street = the_data('Street')
 
     query = 'insert into products (product_name, description, category, list_price) values ("'
     query += zip_code + '", "'
