@@ -41,3 +41,20 @@ def update_order_foods():
     db.get_db().commit()
 
     return jsonify({'message': 'Order foods updated successfully'}), 200
+
+@customer.route('/customers/addlocation',methods=['POST'])
+def customer_add_location():
+
+    cursor = db.get_db().cursor()
+    
+    zip_code = request.form.get('Zip')
+    state = request.form.get('State')
+    city = request.form.get('City')
+    street = request.form.get('Street')
+
+    location_query = '''
+        INSERT INTO Location(zip, state, city, street, apt) 
+        VALUES (%s, %s, %s, %s, %s)
+    '''
+    cursor.execute(location_query, (zip_code, state, city, street))
+    

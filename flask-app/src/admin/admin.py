@@ -73,17 +73,6 @@ def get_restaurant():
 def add_restaurant():
     cursor = db.get_db().cursor()
 
-    zip_code = request.form.get('Zip')
-    state = request.form.get('State')
-    city = request.form.get('City')
-    street = request.form.get('Street')
-
-    location_query = '''
-        INSERT INTO Location(zip, state, city, street, apt) 
-        VALUES (%s, %s, %s, %s, %s)
-    '''
-    cursor.execute(location_query, (zip_code, state, city, street))
-    
     location_id = cursor.lastrowid
 
     name = request.form.get('name')
