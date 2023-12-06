@@ -17,6 +17,21 @@ def get_admin():
 
     return jsonify(json_data)
 
+@admin.route('admin/drivers', methods=['GET'])
+def get_drivers():
+    cursor = db.get_db().cursor()
+    cursor.execute('SELECT Driver.DriverId, Availability, Insurance, Info, Driver.PhoneNumber, Driver_VehicleId.VehicleID, License '
+                   'FROM Driver join Driver_VehicleId '
+                   'on Driver.DriverId = Driver_VehicleId.DriverId')
+    column_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(column_headers, row)))
+
+    return jsonify(json_data)
+
+
 @admin.route('/admin/customer', methods=['GET'])
 def get_customers():
     cursor = db.get_db().cursor()
@@ -57,21 +72,38 @@ def get_restaurant():
 @admin.route('/addrestaurant', methods=['POST'])
 def add_restaurant():
     cursor = db.get_db().cursor()
-    Availability = request.form.get('Availability')
-    Name = request.form.get('Name')
-    Rating = request.form.get('Rating')
-    RestaurantID = request.form.get('RestaurantID')
-    PhoneNumber = request.form.get('PhoneNumber')
-    Location = request.form.get('Location')
-    FoodItem = request.form.get('FoodItem')
-    Price = request.form.get('Price')
-    query = '''
-        INSERT INTO Restaurant(Availability, Name, Rating, RestaurantID, PhoneNumber, Location, FoodItem, Price) 
-        VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
+
+    zip_code = request.form.get('Zip')
+    state = request.form.get('State')
+    city = request.form.get('City')
+    street = request.form.get('Street')
+
+    location_query = '''
+        INSERT INTO Location(zip, state, city, street, apt) 
+        VALUES (%s, %s, %s, %s, %s)
     '''
-    cursor.execute(query, (Availability, Name, Rating, RestaurantID, PhoneNumber, Location, FoodItem, Price))
+    cursor.execute(location_query, (zip_code, state, city, street))
+    
+    location_id = cursor.lastrowid
+
+    name = request.form.get('name')
+    phoneNumber = request.form.get('phoneNumber')
+    performance = request.form.get('performance')  
+    sale = request.form.get('sale')      
+    revenue = request.form.get('revenue')          
+    locationId = request.form.get('locationId')    
+    adminId = request.form.get('adminId')
+
+    restaurant_query = '''
+        INSERT INTO Restaurant(name, phoneNumber, locationId, performance, sale, revenue, adminId)
+        VALUES (%s, %s, %s, %s, %s, %s, %s)
+    '''
+    cursor.execute(restaurant_query, (name, phoneNumber, location_id, performance, sale, revenue, adminId))
+
     db.get_db().commit()
-    return 'The restaurant has been added'
+
+    return 'The restaurant and its location have been added'
+
 
 @admin.route('/adddriver', methods=['POST'])
 def add_driver():

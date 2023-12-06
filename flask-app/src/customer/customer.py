@@ -26,16 +26,18 @@ def get_customers():
     the_response.mimetype = 'application/json'
     return the_response
 
-@customer.route('/customers/order', methods=['PUT'])
-def order_food():
+@customer.route('/customers/order/update-foods', methods=['PUT'])
+def update_order_foods():
+    data = request.json
+    order_id = data.get('OrderId')
+    food_items = data.get('FoodItems')
+
     cursor = db.get_db().cursor()
-    cursor.execute('select * from Customer where CustomerID = {0}'.format(CustomerID))
-    row_headers = [x[0] for x in cursor.description]
-    json_data = []
-    theData = cursor.fetchall()
-    for row in theData:
-        json_data.append(dict(zip(row_headers, row)))
-    the_response = make_response(jsonify(json_data))
-    the_response.status_code = 200
-    the_response.mimetype = 'application/json'
-    return the_response
+    delete_query = 'DELETE FROM Order_Foods WHERE OrderId = %s'
+    cursor.execute(delete_query, (order_id,))
+    insert_query = 'INSERT INTO Order_Foods (OrderId, FoodId) VALUES (%s, %s)'
+    for food_id in food_items:
+        cursor.execute(insert_query, (order_id, food_id))
+    db.get_db().commit()
+
+    return jsonify({'message': 'Order foods updated successfully'}), 200
