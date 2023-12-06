@@ -9,7 +9,7 @@ customer = Blueprint('customer', __name__)
 def get_customers():
     cursor = db.get_db().cursor()
     cursor.execute(
-        'select Customer.CustomerID, Location.zip, Location.state, Location.city, Location.street, Location.apt, ' +
+        'select Customer.CustomerID, Customer.Info, Location.zip, Location.state, Location.city, Location.street, Location.apt, ' +
         'Restaurant.name as FavorateRestaurant, FoodName as FavoriteFood, Customer.PhoneNumber, PaymentMethod, deliveryPreference ' +
         'from Customer join Location on Customer.addressId = Location.locationId ' +
         'join Customer_FavoriteRestaurant on Customer.customerID = Customer_FavoriteRestaurant.CustomerId ' +
