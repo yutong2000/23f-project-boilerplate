@@ -5,15 +5,38 @@ from src import db
 
 admin = Blueprint('admin', __name__)
 
-# Get all the products from the database
-@admin.route('/admin', methods=['GET'])
-def get_restaurant():
+@admin.route('/restaurant/<RestaurantID>', methods=['GET'])
+def add_restaurant():
     cursor = db.get_db().cursor()
-    cursor.execute('')
-    column_headers = [x[0] for x in cursor.description]
-    json_data = []
-    theData = cursor.fetchall()
-    for row in theData:
-        json_data.append(dict(zip(column_headers, row)))
+    Availability = request.form('Availability')
+    Name = request.form('Name')
+    Rating = request.form('Rating')
+    RestaurantID = request.form('RestaurantID')
+    PhoneNumber = request.form('PhoneNumber')
+    Location = request.form('Location')
+    FoodItem = request.form('FoodItem')
+    Price = request.form('Price')
+    query = 'INSERT INTO Restaurant(Availability, Name, Rating, RestaurantID, PhoneNumber, Location, FoodItem, Price) values(%s, %s, %s, %s, %s, %s, %s, %s)'
+    cursor.execute(query)
+    db.get_db().commit()
+    return 'The restaurant has been added'
+    
 
     return jsonify(json_data)
+
+@admin.route('/adddriver', methods=['POST'])
+def add_driver():
+     cursor = db.get_db().cursor()
+     Availability = request.form('Availability')
+     Info = request.form('Info')
+     DriverID = request.form('DriverID')
+     Insurance = request.form('Insurance')
+     PhoneNumber = request.form('PhoneNumber')
+     License = request.form('License')
+     VehicleID = request.form('VehicleID')
+     query = 'INSERT INTO Driver(Availability, Info, DriverID, Insurance, PhoneNumber, License, VehicleID) values(%s, %s, %s, %s, %s, %s, %s)'
+     cursor.execute(query)
+     db.get_db().commit()
+     return 'The driver has been added'
+
+     
