@@ -21,10 +21,10 @@ def get_drivers():
 @drivers.route('/drivers/order', methods=['GET'])
 def order():
     cursor = db.get_db().cursor()
-    cursor.execute('SELECT Driver_Cus.deliveryId, Driver_Cus.DriverId, Driver_Cus.OrderId, OrderInfo.CustomerId  '
+    cursor.execute('SELECT Driver_Cus.deliveryId, Driver_Cus.DriverId, Driver_Cus.OrderId, OrdersInfo.CustomerId  '
                    'FROM Driver_Cus JOIN Driver on Driver_Cus.DriverId = Driver.DriverId '
-                   'JOIN OrdersInfo on Driver_Cus.OrderId = OrderInfo.OrderId '
-                   'JOIN Customer on OrderInfo.CustomerId = Customer.CustomerId')
+                   'JOIN OrdersInfo on Driver_Cus.OrderId = OrdersInfo.OrderId '
+                   'JOIN Customer on OrdersInfo.CustomerId = Customer.CustomerId')
     column_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
