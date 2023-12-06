@@ -18,6 +18,19 @@ def get_drivers():
 
     return jsonify(json_data)
 
+@drivers.route('/drivers/order', methods=['GET'])
+def order():
+    cursor = db.get_db().cursor()
+    cursor.execute('SELECT Driver_Cus.deliveryId, Driver_Cus.DriverId, Driver_Cus.OrderId '
+                   'FROM Driver_Cus JOIN Driver on Driver_Cus.DriverId = Driver.DriverId '
+                   'JOIN OrdersInfo on Driver_Cus.OrderId = OrderInfo.OrderId ')
+    column_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(column_headers, row)))
+
+    return jsonify(json_data)
 
 @drivers.route('/delivery_requests', methods=['GET'])
 def get_delivery_requests():
