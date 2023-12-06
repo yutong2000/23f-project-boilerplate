@@ -34,19 +34,21 @@ def get_restaurants_promotions():
     return jsonify(json_data)
     
 
-@restaurant.route('restaurant/menu', methods=['GET'])
-def get_manu():
+@restaurant.route('/restaurant/menu/<restaurantId>', methods=['GET'])
+def get_menu(restaurantId):
     cursor = db.get_db().cursor()
+
     query = '''
         SELECT FoodItem_Ava_P.FoodId, FoodItem_Ava_P.FoodName, FoodItem_Ava_P.availability, FoodItem_Ava_P.Price
-        FROM FoodItem_Ava_P join Restaurant_foodItem on FoodItem_Ava_P.FoodId = Restaurant_foodItem.FoodItem
+        FROM FoodItem_Ava_P 
+        JOIN Restaurant_foodItem ON FoodItem_Ava_P.FoodId = Restaurant_foodItem.FoodItem
+        WHERE Restaurant_foodItem.RestaurantId = %s
         ORDER BY FoodItem_Ava_P.Price
     '''
-    cursor.execute(query)
+    cursor.execute(query, (restaurantId,))
+
     column_headers = [x[0] for x in cursor.description]
-
     json_data = []
-
     theData = cursor.fetchall()
 
     for row in theData:
