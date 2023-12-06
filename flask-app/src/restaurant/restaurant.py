@@ -8,7 +8,7 @@ restaurant = Blueprint('restaurant', __name__)
 @restaurant.route('/restaurants', methods=['GET'])
 def get_restaurant():
     cursor = db.get_db().cursor()
-    cursor.execute('SELECT Restaurant.restaurantID, name, phoneNumber, performance, sale, revenue, locationId, adminId '
+    cursor.execute('SELECT Restaurant.restaurantID, name, Restaurant.phoneNumber, Restaurant.performance, sale, revenue, Location.zip, Location.state, Location.city, Location.street, Location.apt,, adminId '
                    'FROM Restaurant join Restaurant_foodItem on Restaurant.restaurantID = Restaurant_foodItem.RestaurantId '
                    'join Location on restaurant.locationId = Location.locationId ' 
                    'join Admin on restaurant.adminId = Admin.adminId')
