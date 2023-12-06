@@ -1,4 +1,9 @@
 -- Assuming you have a table named 'Drivers' with the appropriate columns
+ALTER TABLE Driver
+MODIFy phoneNumber Varchar(255);
+
+ALTER TABLE Driver
+MODIFy License Varchar(255);
 
 INSERT INTO Driver (DriverID, Info, PhoneNumber, License, Insurance, Availability, AdminID)
 VALUES
