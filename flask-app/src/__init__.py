@@ -35,7 +35,6 @@ def create_app():
     # Import the various Beluprint Objects
     from src.drivers.drivers import drivers
     from src.admin.admin import admin
-    from src.restaurant.restaurant import restaurant
     from src.customer.customer import customer
     from src.views import views
 
@@ -43,7 +42,6 @@ def create_app():
     # and give a url prefix to each
     app.register_blueprint(drivers,   url_prefix='/d')
     app.register_blueprint(admin,    url_prefix='/a')
-    app.register_blueprint(restaurant, url_prefix = '/r')
     app.register_blueprint(customer, url_prefix = '/c')
 
     # Don't forget to return the app object
