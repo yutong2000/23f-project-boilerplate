@@ -42,18 +42,18 @@ def update_order_foods():
 
     return jsonify({'message': 'Order foods updated successfully'}), 200
 
-@customer.route('/customer',methods=['POST'])
+@customer.route('/customer/addlocation',methods=['POST'])
 def add_new_location():
 
     the_data = request.json
     current_app.logger.info(the_data)
     
-    zip_code = the_data('Zip')
-    state = the_data('State')
-    city = the_data('City')
-    street = the_data('Street')
+    zip_code = the_data('zip')
+    state = the_data('state')
+    city = the_data('city')
+    street = the_data('street')
 
-    query = 'insert into products (product_name, description, category, list_price) values ("'
+    query = 'insert into Location (zip, state, city, street) values ("'
     query += zip_code + '", "'
     query += state + '", "'
     query += city + '", '
