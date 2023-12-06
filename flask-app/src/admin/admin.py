@@ -73,6 +73,7 @@ def get_restaurant():
 def add_restaurant():
     cursor = db.get_db().cursor()
 
+
     location_id = cursor.lastrowid
 
     name = request.form.get('name')

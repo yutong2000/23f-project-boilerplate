@@ -48,18 +48,22 @@ def add_new_location():
     the_data = request.json
     current_app.logger.info(the_data)
     
-    zip_code = the_data('zip')
-    state = the_data('state')
-    city = the_data('city')
-    street = the_data('street')
-    apt = the_data('apt')
+    zip_code = the_data['zip']
+    state = the_data['state']
+    city = the_data['city']
+    street = the_data['street']
+    apt = the_data['apt']
 
-    query = 'insert into Location (zip, state, city, street, apt) values ("'
-    query += zip_code + '", "'
-    query += state + '", "'
-    query += city + '", "'
-    query += apt + '", "'
-    query += street + ')'
+    #query = 'insert into Location (zip, state, city, street, apt) values ("'
+    #query += zip_code + '", "'
+    #query += state + '", "'
+    #query += city + '", "'
+    #query += street + '", '
+    #query += apt + ')'
+
+    query = 'INSERT INTO Location (zip, state, city, street, apt) VALUES ('
+    query += f'"{zip_code}", "{state}", "{city}", "{street}", "{apt}")'
+
     current_app.logger.info(query)
 
     
