@@ -34,7 +34,7 @@ def get_delivery_requests():
         json_data.append(dict(zip(column_headers, row)))
     return jsonify(json_data)
 
-@driver.rount('/delivery_status/{deliveryID}', methods=['PUT'])
+@driver.route('/delivery_status/{deliveryID}', methods=['PUT'])
 def update_deliver_status(deliveryID):
     Delivered = False
     query = '''
