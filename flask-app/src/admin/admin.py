@@ -5,7 +5,7 @@ from src import db
 
 admin = Blueprint('admin', __name__)
 
-@admin.route('/restaurant/<RestaurantID>', methods=['GET'])
+@admin.route('/addrestaurant', methods=['POST'])
 def add_restaurant():
     cursor = db.get_db().cursor()
     Availability = request.form('Availability')
