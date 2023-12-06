@@ -7,7 +7,7 @@ drivers = Blueprint('drivers', __name__)
 @drivers.route('/drivers', methods=['GET'])
 def get_drivers():
     cursor = db.get_db().cursor()
-    cursor.execute('SELECT Driver.DriverId, Availability, Insurance, Info, PhoneNumber, VehicleID, Lisence '
+    cursor.execute('SELECT Driver.DriverId, Availability, Insurance, Info, PhoneNumber, VehicleID, License '
                    'FROM Driver join Driver_VehicleId '
                    'on Driver.DriverId = Driver_VehicleId.DriverId')
     column_headers = [x[0] for x in cursor.description]
