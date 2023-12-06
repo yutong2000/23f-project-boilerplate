@@ -1,6 +1,6 @@
 -- Assuming you have a table named 'Feedback' with columns FeedBackId, AdminId, and FeedBackText
 
-INSERT INTO Feedback (FeedBackId, AdminId, FeedBackText)
+INSERT INTO Admin_FeedBack (FeedBackId, AdminId, FeedBack)
 VALUES
 (1, 6, 'Positive feedback about lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum.'),
 (2, 19, 'A review mentioning congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend.'),

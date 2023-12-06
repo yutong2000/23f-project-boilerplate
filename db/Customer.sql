@@ -1,6 +1,8 @@
 -- Assuming you have a table named 'Customers' with the appropriate columns
+ALTER TABLE Customer
+MODIFY phoneNumber varchar(255);
 
-INSERT INTO Customer (cutomerID, info, phoneNumber, addressId, paymentMethod, deliveryPreference, loginTime, adminId)
+INSERT INTO Customer (customerID, info, phoneNumber, addressId, paymentMethod, deliveryPreference, loginTime, adminId)
 VALUES
 (1, 'Consistent and reliable customer with a preference for healthy options.', '661-819-4541', 32, 'mastercard', 'Prefers quick and timely deliveries, especially for dinner orders.', '2023-01-07', 17),
 (2, 'Enjoys a wide variety of cuisines, often orders in bulk.', '865-217-0034', 32, 'mastercard', 'Likes family-sized orders with special attention to packaging.', '2022-03-22', 35),
