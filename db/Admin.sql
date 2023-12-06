@@ -1,6 +1,6 @@
 -- Assuming you have a table named 'AdminPerformance' with the appropriate columns
 
-INSERT INTO AdminPerformance (AdminId, Performance, Rating, PhoneNumber, TransactionFee, SupportPolicy, LegalStatus)
+INSERT INTO Admin (AdminId, Performance, Rating, PhoneNumber, TransactionFee, SupportPolicy, LegalStatus)
 VALUES
 (1, 'Efficient in managing complex tasks and delivering results', 4.5, '904-605-2501', 71, 'Comprehensive 24/7 assistance', true),
 (2, 'Needs improvement in operational efficiency and client relations', 0.7, '626-492-6385', 66, 'Limited support during business hours only', true),
