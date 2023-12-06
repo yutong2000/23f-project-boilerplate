@@ -18,7 +18,7 @@ def create_app():
     app.config['MYSQL_DATABASE_USER'] = 'root'
     app.config['MYSQL_DATABASE_PASSWORD'] = open('/secrets/db_root_password.txt').readline().strip()
     app.config['MYSQL_DATABASE_HOST'] = 'db'
-    app.config['MYSQL_DATABASE_PORT'] = 4000
+    app.config['MYSQL_DATABASE_PORT'] = 3306
     app.config['MYSQL_DATABASE_DB'] = 'console'
 
     # Initialize the database object with the settings above. 
@@ -30,13 +30,14 @@ def create_app():
     # Example: localhost:8001
     @app.route("/")
     def welcome():
-        return "<h1>Welcome to the 3200 boilerplate app</h1>"
+        return "<h1>Welcome to the 3200 project</h1>"
 
     # Import the various Beluprint Objects
     from src.drivers.drivers import drivers
     from src.admin.admin import admin
     from src.restaurant.restaurant import restaurant
     from src.customers.customers import customers
+    from src.views import views
 
     # Register the routes from each Blueprint with the app object
     # and give a url prefix to each
