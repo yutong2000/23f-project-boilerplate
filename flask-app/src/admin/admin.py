@@ -17,6 +17,43 @@ def get_admin():
 
     return jsonify(json_data)
 
+@admin.route('/customer', methods=['GET'])
+def get_customers():
+    cursor = db.get_db().cursor()
+    cursor.execute(
+        'select Customer.CustomerID, Location.zip, Location.state, Location.city, Location.street, Location.apt, ' +
+        'Restaurant.name as FavorateRestaurant, FoodName as FavoriteFood, Customer.PhoneNumber, PaymentMethod, deliveryPreference, Customer.adminId ' +
+        'from Customer join Location on Customer.addressId = Location.locationId ' +
+        'join Customer_FavoriteRestaurant on Customer.customerID = Customer_FavoriteRestaurant.CustomerId ' +
+        'join Restaurant on Customer_FavoriteRestaurant.RestaurantId = Restaurant.restaurantID ' +
+        'join Customer_FavoriteFood on Customer.customerID = Customer_FavoriteFood.CustomerId ' +
+        'join FoodItem_Ava_P on Customer_FavoriteFood.FoodId = FoodItem_Ava_P.FoodId '
+        'join Admin on Customer.AdminId = Admin.AdminId')
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
+
+@admin.route('/restaurant', methods=['GET'])
+def get_restaurant():
+    cursor = db.get_db().cursor()
+    cursor.execute('SELECT Restaurant.restaurantID, name, Restaurant.phoneNumber, Restaurant.performance, sale, revenue, Location.zip, Location.state, Location.city, Location.street, Location.apt, Restaurant.adminId '
+                   'FROM Restaurant join Restaurant_foodItem on Restaurant.restaurantID = Restaurant_foodItem.RestaurantId '
+                   'join Location on Restaurant.locationId = Location.locationId ' 
+                   'join Admin on Restaurant.adminId = Admin.adminId')
+    column_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(column_headers, row)))
+
+    return jsonify(json_data)
+
 @admin.route('/addrestaurant', methods=['POST'])
 def add_restaurant():
     cursor = db.get_db().cursor()

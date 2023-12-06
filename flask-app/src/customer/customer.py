@@ -26,8 +26,8 @@ def get_customers():
     the_response.mimetype = 'application/json'
     return the_response
 
-@customer.route('/customers/<CustomerID>', methods=['GET'])
-def get_customer(CustomerID):
+@customer.route('/customers/order', methods=['PUT'])
+def order_food():
     cursor = db.get_db().cursor()
     cursor.execute('select * from Customer where CustomerID = {0}'.format(CustomerID))
     row_headers = [x[0] for x in cursor.description]
