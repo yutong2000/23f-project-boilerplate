@@ -31,7 +31,7 @@ VALUES
 (27, 'Solid performance in administrative tasks, lacking in creativity', 0.2, '885-588-3908', 37, 'Effective problem-solving with timely responses', true),
 (28, 'Exceptional in crisis management and strategic decision-making', 4.7, '451-907-4465', 93, 'High-quality, 24/7 customer support', true),
 (29, 'Good team player, needs to improve individual performance', 3.1, '456-873-2348', 49, 'Efficient and prompt customer service', true),
-(30, 'Competent in regular operations, but lacks innovative approach', 1.7, '822-422-4096', 33, 'Basic support with a focus on reliability', true);
+(30, 'Competent in regular operations, but lacks innovative approach', 1.7, '822-422-4096', 33, 'Basic support with a focus on reliability', true),
 (31, 'Highly efficient in resource management and team leadership', 4.8, '759-746-5169', 7, 'Prompt and effective support for all queries', true),
 (32, 'Outstanding in strategic planning and execution', 4.9, '792-473-5926', 16, 'Comprehensive, multi-channel customer support', true),
 (33, 'Adept in handling customer relations, needs efficiency in processes', 2.9, '733-130-4327', 26, 'Dedicated support with a focus on customer satisfaction', false),

@@ -25,25 +25,33 @@ def get_delivery_requests():
         FROM driver
         ORDER BY DriverID
     '''
-
     cursor = db.get_db().cursor()
     cursor.execute(query)
-
     column_headers = [x[0] for x in cursor.description]
-
     json_data = []
-
     theData = cursor.fetchall()
-
     for row in theData:
         json_data.append(dict(zip(column_headers, row)))
-    
     return jsonify(json_data)
 
 @driver.rount('/delivery_status/{deliveryID}', methods=['PUT'])
 def update_deliver_status(deliveryID):
+    Delivered = False
     query = '''
-        SELECT PickupLocId, DropLocId, DeliveryTime, Delivered
-        FROM Driver_Cus
-        
+        UPDATE Driver_Cus
+        SET DeliveryTime = CURRENT_TIMESTAMP
+            Delivered = %s
+        WHERE DeliveryID = %s
     '''
+    cursor = db.get_db().cursor()
+    cursor.execute(query, (Delivered, deliveryID))
+    db.get_db().commit()
+
+
+@driver.route('/driver/<driver_id>/availability', methods=['PUT'])
+def update_driver_availability(driver_id):
+    availability = request.json['availability']
+    cursor = db.get_db().cursor()
+    cursor.execute('UPDATE Driver SET Availability = %s WHERE DriverID = %s', (availability, driver_id))
+    db.get_db().commit()
+    return jsonify({'message': 'Driver availability updated successfully'})
