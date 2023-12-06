@@ -36,6 +36,7 @@ def create_app():
     from src.drivers.drivers import drivers
     from src.admin.admin import admin
     from src.customer.customer import customer
+    from src.restaurant.restaurant import restaurant
 
     # Register the routes from each Blueprint with the app object
     # and give a url prefix to each
