@@ -40,7 +40,7 @@ def get_menu(restaurantId):
         SELECT FoodItem_Ava_P.FoodId, FoodItem_Ava_P.FoodName, FoodItem_Ava_P.availability, FoodItem_Ava_P.Price
         FROM FoodItem_Ava_P 
         JOIN Restaurant_foodItem ON FoodItem_Ava_P.FoodId = Restaurant_foodItem.FoodItem
-        WHERE Restaurant_foodItem.RestaurantId = ''' + int(restaurantId)
+        WHERE Restaurant_foodItem.RestaurantId = ''' + str(restaurantId)
     current_app.logger.info(query)
 
     cursor = db.get_db().cursor()
