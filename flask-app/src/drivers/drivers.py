@@ -24,7 +24,7 @@ def get_delivery_requests():
     
     query = '''
         SELECT Availability, DriverID, PhoneNumber, VehicleID
-        FROM driver
+        FROM Driver
         ORDER BY DriverId
     '''
     cursor = db.get_db().cursor()
