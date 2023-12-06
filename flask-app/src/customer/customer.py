@@ -1,4 +1,4 @@
-from flask import Blueprint, request, jsonify, make_response
+from flask import Blueprint, request, jsonify, make_response, current_app
 import json
 from src import db
 
@@ -45,16 +45,25 @@ def update_order_foods():
 @customer.route('/customers/addlocation',methods=['POST'])
 def customer_add_location():
 
-    cursor = db.get_db().cursor()
+    the_data = request.json
+    current_app.logger.info(the_data)
     
     zip_code = request.form.get('Zip')
     state = request.form.get('State')
     city = request.form.get('City')
     street = request.form.get('Street')
 
-    location_query = '''
-        INSERT INTO Location(zip, state, city, street, apt) 
-        VALUES (%s, %s, %s, %s, %s)
-    '''
-    cursor.execute(location_query, (zip_code, state, city, street))
+    query = 'insert into products (product_name, description, category, list_price) values ("'
+    query += zip_code + '", "'
+    query += state + '", "'
+    query += city + '", '
+    query += street + ')'
+    current_app.logger.info(query)
+
+    
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    db.get_db().commit()
+    
+    return 'Success!'
     
