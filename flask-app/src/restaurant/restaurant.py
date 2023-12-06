@@ -36,13 +36,13 @@ def get_restaurants_promotions (RestaurantID):
     return jsonify(json_data)
     
 
-@restaurant.route('restaurant/foodname', methods=['GET'])
+@restaurant.route('restaurant/manue', methods=['GET'])
 def get_manu():
     cursor = db.get_db().cursor()
     query = '''
-        SELECT FoodItem, Price
-        FROM restaurants
-        ORDER BY price
+        SELECT FoodItem_Ava_P.FoodId, FoodItem_Ava_P.FoodName, FoodItem_Ava_P.availability, FoodItem_Ava_P.Price, Restaurant_foodItem.FoodItem 
+        FROM FoodItem_Ava_P join Restaurant_foodItem on FoodItem_Ava_P.FoodId = Restaurant_foodItem.FoodItem
+        ORDER BY FoodItem_Ava_P.Price
     '''
     cursor.execute(query)
     column_headers = [x[0] for x in cursor.description]
