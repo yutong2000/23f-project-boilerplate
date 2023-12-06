@@ -4,6 +4,19 @@ from src import db
 
 admin = Blueprint('admin', __name__)
 
+@admin.route('/admin', methods=['GET'])
+def get_admin():
+    cursor = db.get_db().cursor()
+    cursor.execute('SELECT AdminId, Performance, Rating, PhoneNumber, TransactionFee, SupportPolicy, LegalStatus, FeedBackId, FeedBack'
+                   'join Admin_FeedBack on Admin.AdminId = Admin_FeedBack.Admin.AdminId')
+    column_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(column_headers, row)))
+
+    return jsonify(json_data)
+
 @admin.route('/addrestaurant', methods=['POST'])
 def add_restaurant():
     cursor = db.get_db().cursor()

@@ -18,7 +18,7 @@ CREATE TABLE if not exists Admin
     AdminId        int,
     Performance    varchar(200), -- evaluate the performance of an admin
     Rating         double,       -- rating of an admin
-    PhoneNumber    varchar(15) not null unique,
+    PhoneNumber    varchar(25) not null unique,
     TransactionFee double,
     SupportPolicy  text,
     LegalStatus    boolean,
@@ -42,7 +42,7 @@ CREATE TABLE if not exists Restaurant
 (
     restaurantID int,
     name         varchar(30) NOT NULL,        -- Restaurant name
-    phoneNumber  int         NOT NULL UNIQUE, -- Restaurant phone number
+    phoneNumber  varchar(25)         NOT NULL UNIQUE, -- Restaurant phone number
     performance  varchar(200),                -- evaluate the performance of a Restaurant
     sale         double      NOT NULL,        -- total sale
     revenue      double      NOT NULL,        -- total revenue
