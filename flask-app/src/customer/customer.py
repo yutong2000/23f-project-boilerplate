@@ -9,7 +9,13 @@ customer = Blueprint('customer', __name__)
 def get_customers():
     cursor = db.get_db().cursor()
     cursor.execute(
-        'select CustomerID, zip, state, city, street, apt, FavoriteRestaurant, FavoriteFood, PhoneNumber, PaymentMethod, DeliveryPerference from Customer join Location on Customer.addressId = Location.locationId')
+        'select Customer.CustomerID, Location.zip, Location.state, Location.city, Location.street, Location.apt, ' +
+        'Restaurant.name as FavorateRestaurant, FoodName as FavoriteFood, Customer.PhoneNumber, PaymentMethod, deliveryPreference ' +
+        'from Customer join Location on Customer.addressId = Location.locationId ' +
+        'join Customer_FavoriteRestaurant on Customer.customerID = Customer_FavoriteRestaurant.CustomerId ' +
+        'join Restaurant on Customer_FavoriteRestaurant.RestaurantId = Restaurant.restaurantID ' +
+        'join Customer_FavoriteFood on Customer.customerID = Customer_FavoriteFood.CustomerId ' +
+        'join FoodItem_Ava_P on Customer_FavoriteFood.FoodId = FoodItem_Ava_P.FoodId')
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
@@ -20,10 +26,10 @@ def get_customers():
     the_response.mimetype = 'application/json'
     return the_response
 
-@customer.route('/customers/<CostomerID>', methods=['GET'])
+@customer.route('/customers/<CustomerID>', methods=['GET'])
 def get_customer(CustomerID):
     cursor = db.get_db().cursor()
-    cursor.execute('select * from customers where id = {0}'.format(CustomerID))
+    cursor.execute('select * from Customer where CustomerID = {0}'.format(CustomerID))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()

@@ -44,6 +44,6 @@ def create_app():
     app.register_blueprint(restaurant, url_prefix='/r')
     app.register_blueprint(admin,    url_prefix='/a')
     app.register_blueprint(customer, url_prefix = '/c')
-
+    
     # Don't forget to return the app object
     return app

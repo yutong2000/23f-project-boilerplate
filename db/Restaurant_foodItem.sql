@@ -1,6 +1,6 @@
 -- Assuming you have a table named 'RestaurantFoodItems' with columns RestaurantId and FoodItem
 
-INSERT INTO RestaurantFoodItems (RestaurantId, FoodItem)
+INSERT INTO Restaurant_foodItem (RestaurantId, FoodItem)
 VALUES
 (17, 5),
 (38, 37),
