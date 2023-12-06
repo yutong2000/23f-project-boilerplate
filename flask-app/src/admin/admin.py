@@ -5,7 +5,7 @@ from src import db
 admin = Blueprint('admin', __name__)
 
 @admin.route('/admin', methods=['GET'])
-def get_restaurant():
+def get_admin():
     cursor = db.get_db().cursor()
     cursor.execute('SELECT AdminId, Performance, Rating, PhoneNumber, TransactionFee, SupportPolicy, LegalStatus, FeedBackId, FeedBack'
                    'join Admin_FeedBack on Admin.AdminId = Admin_FeedBack.Admin.AdminId')
