@@ -43,7 +43,7 @@ def update_order_foods():
     return jsonify({'message': 'Order foods updated successfully'}), 200
 
 @customer.route('/customers/addlocation',methods=['POST'])
-def customer_add_location():
+def add_new_location():
 
     the_data = request.json
     current_app.logger.info(the_data)
