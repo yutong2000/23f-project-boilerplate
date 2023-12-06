@@ -7,7 +7,7 @@ drivers = Blueprint('drivers', __name__)
 @drivers.route('/drivers', methods=['GET'])
 def get_drivers():
     cursor = db.get_db().cursor()
-    cursor.execute('SELECT DriverID, Availability, Insurance, Info, PhoneNumber, VehicleID, Lisence')
+    cursor.execute('SELECT DriverId, Availability, Insurance, Info, PhoneNumber, VehicleID, Lisence FROM Driver')
     column_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
