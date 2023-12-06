@@ -2,7 +2,7 @@ from flask import Blueprint, request, jsonify, make_response, current_app
 import json
 from src import db
 
-drivers = Blueprint('driver', __name__)
+drivers = Blueprint('drivers', __name__)
 
 @drivers.route('/drivers', methods=['GET'])
 def get_drivers():

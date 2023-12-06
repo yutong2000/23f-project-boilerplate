@@ -3,9 +3,9 @@ import json
 from src import db
 
 
-restaurants = Blueprint('restaurants', __name__)
+restaurant = Blueprint('restaurant', __name__)
 
-@restaurants.route('/restaurant', methods=['GET'])
+@restaurant.route('/restaurant', methods=['GET'])
 def get_restaurant():
     cursor = db.get_db().cursor()
     cursor.execute('SELECT Availability, Name, Location, Rating')
@@ -17,7 +17,7 @@ def get_restaurant():
 
     return jsonify(json_data)
 
-@restaurants.route('/restaurants/<promotions>', methods=['GET'])
+@restaurant.route('/restaurant/<promotions>', methods=['GET'])
 def get_restaurants_promotions (RestaurantID):
 
     query = 'Availability, Name, Location, Rating, RestaurantsID FROM Restaurant WHERE RestaurantID = ' + str(RestaurantID)
@@ -33,7 +33,7 @@ def get_restaurants_promotions (RestaurantID):
     return jsonify(json_data)
     
 
-@restaurants.route('/foodname', methods=['GET'])
+@restaurant.route('/foodname', methods=['GET'])
 def get_manu():
     cursor = db.get_db().cursor()
     query = '''
