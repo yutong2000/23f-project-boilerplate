@@ -107,10 +107,12 @@ def add_driver():
      insurance = the_data('Insurance')
      availability = the_data('Availability')
      adminid = the_data('AdminId')
-
+     '''
      query = 'INSERT INTO Driver (DriverId, Info, PhoneNumber, License, Insurance, Availability, AdminId) VALUES ('
      query += f'"{driverid}", "{info}", "{phonenumber}", "{license}", "{insurance}", "{availability}", "{adminid}")'
-
+     '''
+     query = 'INSERT INTO Driver (DriverId, Info, PhoneNumber, License, Insurance, Availability, AdminId) VALUES (%s, %s, %s, %s, %s, %s, %s)'
+     cursor.execute(query, (driverid, info, phonenumber, license, insurance, availability, adminid))
      current_app.logger.info(query)
 
     
