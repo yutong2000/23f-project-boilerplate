@@ -80,7 +80,7 @@ def add_restaurant():
     performance = the_data.get('performance ')
     sale = the_data.get('sale')
     revenue = the_data.get('revenue')
-    locationid = the_data.get('locationid')
+    locationid = the_data.get('locationId')
     adminid = the_data.get('adminId')
     
     query = 'INSERT INTO Restaurant (restaurantID, name, phoneNumber, performance, sale, revenue, locationid, adminId) VALUES ('
