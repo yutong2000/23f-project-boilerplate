@@ -77,10 +77,10 @@ def add_customer():
      addressid = the_data.get('addressId')
      paymentmethod = the_data.get('paymentMethod')
      deliveryperference = the_data.get('deliveryPreference')
-     login = the_data.get('loginTime')
+     adminid = the_data.get('adminId')
      
-     query = 'INSERT INTO Customer (customerID, Info, phoneNumber, addressId, paymentMethod, deliveryPreference, loginTime) VALUES ('
-     query += f'"{customerid}", "{info}", "{phonenumber}", "{addressid}", "{paymentmethod}", "{deliveryperference}", "{login}")'
+     query = 'INSERT INTO Customer (customerID, Info, phoneNumber, addressId, paymentMethod, deliveryPreference, adminid) VALUES ('
+     query += f'"{customerid}", "{info}", "{phonenumber}", "{addressid}", "{paymentmethod}", "{deliveryperference}", "{adminid}")'
      current_app.logger.info(query)
 
     
@@ -95,18 +95,17 @@ def update_restaurant(customerID):
     the_data = request.json
     current_app.logger.info(the_data)
 
-    info = the_data('')
+    info = the_data('info')
     phoneNumber = the_data('phoneNumber')
-    performance = the_data('performance')
-    sale = the_data('sale')
-    revenue = the_data('revenue')
-    locationId = the_data('locationId')
+    addressid = the_data('addressId')
+    paymentmethod = the_data('paymentMethod')
+    deliveryperference = the_data('deliveryPerference')
     adminId = the_data('adminId')
 
     query = '''  
-        UPDATE Restaurant 
-        SET name = %s, phoneNumber = %s, performance = %s, sale = %s, revenue = %s, locationId = %s, adminId = %s
-        WHERE restaurantID = %s
+        UPDATE Customer
+        SET info = %s, phoneNumber = %s, addressId = %s, paymentMethod = %s, deliveryPerference = %s, adminId = %s
+        WHERE customerID = %s
     '''
     current_app.logger.info(query)
 
