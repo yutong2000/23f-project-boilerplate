@@ -60,11 +60,11 @@ def order():
 @drivers.route('/delivery_requests', methods=['GET'])
 def get_delivery_requests():
     
-    query = '''
+    query = 
         SELECT Availability, DriverID, PhoneNumber, VehicleID
         FROM Driver
         ORDER BY DriverId
-    '''
+    
     cursor = db.get_db().cursor()
     cursor.execute(query)
     column_headers = [x[0] for x in cursor.description]
