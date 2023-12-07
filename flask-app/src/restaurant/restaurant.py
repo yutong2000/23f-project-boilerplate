@@ -126,3 +126,19 @@ def update_restaurant(restaurantID):
 
 
     return 'Info has updated.'
+
+@restaurant.route('/deleterestaurant/<int:restaurantID>', methods=['DELETE'])
+def delete_restaurant(restaurantID):
+    cursor = db.get_db().cursor()
+
+    # Check if the restaurantID exists and belongs to the requesting restaurant
+    # This logic depends on how you determine ownership/authentication
+    # ...
+
+    # Assuming the check is passed, delete the restaurant record by restaurantID
+    query = 'DELETE FROM Restaurant WHERE restaurantID = %s'
+    cursor.execute(query, (restaurantID,))
+
+    db.get_db().commit()
+
+    return jsonify({'message': 'Restaurant deleted successfully'}), 200

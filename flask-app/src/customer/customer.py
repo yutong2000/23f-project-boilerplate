@@ -115,3 +115,15 @@ def update_restaurant(customerID):
 
 
     return 'Info has updated.'
+
+@customer.route('/deletecustomer/<int:customerID>', methods=['DELETE'])
+def delete_customer(customerID):
+    # Authentication and authorization logic goes here
+    # Ensure that the customer making the request matches the customerID
+    # ...
+
+    cursor = db.get_db().cursor()
+    query = 'DELETE FROM Customer WHERE customerID = %s'
+    cursor.execute(query, (customerID,))
+    db.get_db().commit()
+    return jsonify({'message': 'Customer deleted successfully'}), 200

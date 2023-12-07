@@ -220,3 +220,21 @@ def update_restaurant(restaurantID):
 
 
     return 'Info has updated.'
+
+
+@admin.route('/admin/deleterestaurant/<int:restaurantID>', methods=['DELETE'])
+def delete_restaurant(restaurantID):
+    cursor = db.get_db().cursor()
+    query = 'DELETE FROM Restaurant WHERE restaurantID = %s'
+    cursor.execute(query, (restaurantID,))
+    db.get_db().commit()
+    return jsonify({'message': 'Restaurant deleted successfully'}), 200
+
+@admin.route('/admin/deletecustomer/<int:customerID>', methods=['DELETE'])
+def delete_customer(customerID):
+    cursor = db.get_db().cursor()
+    query = 'DELETE FROM Customer WHERE customerID = %s'
+    cursor.execute(query, (customerID,))
+    db.get_db().commit()
+    return jsonify({'message': 'Customer deleted successfully'}), 200
+
