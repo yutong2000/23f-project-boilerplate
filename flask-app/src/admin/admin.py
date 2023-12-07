@@ -97,7 +97,7 @@ def add_restaurant():
 
 @admin.route('/adddriver', methods=['POST'])
 def add_driver():
-     the_data = request.json()
+     the_data = request.json
      current_app.logger.info(the_data)
      
      driverid = the_data('DriverId')
@@ -108,7 +108,7 @@ def add_driver():
      availability = the_data('Availability')
      adminid = the_data('AdminId')
 
-     query = 'INSERT INTO Driver (DriverId, Info, PhoneNumber, License, Insurance, Availabilty, AdminId) VALUES ('
+     query = 'INSERT INTO Driver (DriverId, Info, PhoneNumber, License, Insurance, Availability, AdminId) VALUES ('
      query += f'"{driverid}", "{info}", "{phonenumber}", "{license}", "{insurance}", "{availability}", "{adminid}")'
 
      current_app.logger.info(query)
