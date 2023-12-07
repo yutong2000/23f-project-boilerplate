@@ -100,7 +100,7 @@ def add_restaurant():
     
     return 'Success!'
 
-@restaurant.route('/updaterestaurant/<restaurantID>')
+@restaurant.route('/updaterestaurant/<restaurantID>', methods=['PUT'])
 def update_restaurant(restaurantID):
     the_data = request.json
     current_app.logger.info(the_data)
