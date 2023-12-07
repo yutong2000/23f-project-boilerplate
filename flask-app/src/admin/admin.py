@@ -100,13 +100,13 @@ def add_driver():
      the_data = request.json
      current_app.logger.info(the_data)
      
-     driverid = the_data('DriverId')
-     info = the_data('Info')
-     phonenumber = the_data('PhoneNumber')
-     license = the_data('License')
-     insurance = the_data('Insurance')
-     availability = the_data('Availability')
-     adminid = the_data('AdminId')
+     driverid = the_data.get('DriverId')
+     info = the_data.get('Info')
+     phonenumber = the_data.get('PhoneNumber')
+     license = the_data.get('License')
+     insurance = the_data.get('Insurance')
+     availability = the_data.get('Availability')
+     adminid = the_data.get('AdminId')
      '''
      query = 'INSERT INTO Driver (DriverId, Info, PhoneNumber, License, Insurance, Availability, AdminId) VALUES ('
      query += f'"{driverid}", "{info}", "{phonenumber}", "{license}", "{insurance}", "{availability}", "{adminid}")'
