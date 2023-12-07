@@ -107,9 +107,17 @@ def add_driver():
      insurance = the_data.get('Insurance')
      availability = the_data.get('Availability')
      adminid = the_data.get('AdminId')
-     '''
+     
      query = 'INSERT INTO Driver (DriverId, Info, PhoneNumber, License, Insurance, Availability, AdminId) VALUES ('
      query += f'"{driverid}", "{info}", "{phonenumber}", "{license}", "{insurance}", "{availability}", "{adminid}")'
+     current_app.logger.info(query)
+
+    
+     cursor = db.get_db().cursor()
+     cursor.execute(query)
+     db.get_db().commit()
+    
+     return 'Success!'
      '''
 
      cursor = db.get_db().cursor()
@@ -123,7 +131,6 @@ def add_driver():
     
      return 'Success!'
 
-'''
     the_data = request.json
     current_app.logger.info(the_data)
     
