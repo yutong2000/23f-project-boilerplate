@@ -97,18 +97,59 @@ def add_restaurant():
 
 @admin.route('/adddriver', methods=['POST'])
 def add_driver():
+     the_data = request.json()
+     current_app.logger.info(the_data)
+     
+     driverid = the_data('DriverId')
+     info = the_data('Info')
+     phonenumber = the_data('PhoneNumber')
+     license = the_data('License')
+     insurance = the_data('Insurance')
+     availability = the_data('Availability')
+     adminid = the_data('AdminId')
+
+     query = 'INSERT INTO Driver (DriverId, Info, PhoneNumber, License, Insurance, Availabilty, AdminId) VALUES ('
+     query += f'"{driverid}", "{info}", "{phonenumber}", "{license}", "{insurance}", "{availability}", "{adminid}")'
+
+     current_app.logger.info(query)
+
+    
      cursor = db.get_db().cursor()
-     Availability = request.form('Availability')
-     Info = request.form('Info')
-     DriverID = request.form('DriverID')
-     Insurance = request.form('Insurance')
-     PhoneNumber = request.form('PhoneNumber')
-     License = request.form('License')
-     VehicleID = request.form('VehicleID')
-     query = 'INSERT INTO Driver(Availability, Info, DriverID, Insurance, PhoneNumber, License, VehicleID) values(%s, %s, %s, %s, %s, %s, %s)'
      cursor.execute(query)
      db.get_db().commit()
-     return 'The driver has been added'
+    
+     return 'Success!'
+
+'''
+    the_data = request.json
+    current_app.logger.info(the_data)
+    
+    zip_code = the_data['zip']
+    state = the_data['state']
+    city = the_data['city']
+    street = the_data['street']
+    apt = the_data['apt']
+
+    #query = 'insert into Location (zip, state, city, street, apt) values ("'
+    #query += zip_code + '", "'
+    #query += state + '", "'
+    #query += city + '", "'
+    #query += street + '", '
+    #query += apt + ')'
+
+    query = 'INSERT INTO Location (zip, state, city, street, apt) VALUES ('
+    query += f'"{zip_code}", "{state}", "{city}", "{street}", "{apt}")'
+
+    current_app.logger.info(query)
+
+    
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    db.get_db().commit()
+    
+    return 'Success!'
+    '''
+
 
 @admin.route('/addcustomer', methods=['Post'])
 def add_customer():
