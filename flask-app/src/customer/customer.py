@@ -89,3 +89,30 @@ def add_customer():
      db.get_db().commit()
     
      return 'Success!'
+
+@customer.route('/updatecustomer/<customerID>')
+def update_restaurant(customerID):
+    the_data = request.json
+    current_app.logger.info(the_data)
+
+    info = the_data('')
+    phoneNumber = the_data('phoneNumber')
+    performance = the_data('performance')
+    sale = the_data('sale')
+    revenue = the_data('revenue')
+    locationId = the_data('locationId')
+    adminId = the_data('adminId')
+
+    query = '''  
+        UPDATE Restaurant 
+        SET name = %s, phoneNumber = %s, performance = %s, sale = %s, revenue = %s, locationId = %s, adminId = %s
+        WHERE restaurantID = %s
+    '''
+    current_app.logger.info(query)
+
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    db.get_db().commit()
+
+
+    return 'Info has updated.'
