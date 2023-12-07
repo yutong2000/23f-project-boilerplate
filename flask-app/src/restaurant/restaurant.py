@@ -51,3 +51,51 @@ def get_menu(restaurantId):
     for row in the_data:
         json_data.append(dict(zip(column_headers, row)))
     return jsonify(json_data)
+
+@restaurant.route('/restaurant/addlocation',methods=['POST'])
+def add_new_location():
+
+    the_data = request.json
+    current_app.logger.info(the_data)
+    
+    zip_code = the_data['zip']
+    state = the_data['state']
+    city = the_data['city']
+    street = the_data['street']
+    apt = the_data['apt']
+
+    query = 'INSERT INTO Location (zip, state, city, street, apt) VALUES ('
+    query += f'"{zip_code}", "{state}", "{city}", "{street}", "{apt}")'
+
+    current_app.logger.info(query)
+
+    
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    db.get_db().commit()
+    
+    return 'Success!'
+
+@restaurant.route('/restaurant/addrestaurant', methods=['POST'])
+def add_restaurant():
+    the_data = request.json
+    current_app.logger.info(the_data)
+    
+    restaurantid = the_data.get('restaurantID')
+    name = the_data.get('name')
+    phonenumber = the_data.get('phoneNumber')
+    performance = the_data.get('performance ')
+    sale = the_data.get('sale')
+    revenue = the_data.get('revenue')
+    locationid = the_data.get('locationid')
+    adminid = the_data.get('adminId')
+    
+    query = 'INSERT INTO Restaurant (restaurantID, name, phoneNumber, performance, sale, revenue, locationid, adminId) VALUES ('
+    query += f'"{restaurantid}", "{name}", "{phonenumber}", "{performance}", "{sale}", "{revenue}", "{locationid}", "{adminid}")'
+    current_app.logger.info(query)
+
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    db.get_db().commit()
+    
+    return 'Success!'

@@ -18,6 +18,30 @@ def get_drivers():
 
     return jsonify(json_data)
 
+@drivers.route('/adddriver', methods=['POST'])
+def add_driver():
+     the_data = request.json
+     current_app.logger.info(the_data)
+     
+     driverid = the_data.get('DriverId')
+     info = the_data.get('Info')
+     phonenumber = the_data.get('PhoneNumber')
+     license = the_data.get('License')
+     insurance = the_data.get('Insurance')
+     availability = the_data.get('Availability')
+     adminid = the_data.get('AdminId')
+     
+     query = 'INSERT INTO Driver (DriverId, Info, PhoneNumber, License, Insurance, Availability, AdminId) VALUES ('
+     query += f'"{driverid}", "{info}", "{phonenumber}", "{license}", "{insurance}", "{availability}", "{adminid}")'
+     current_app.logger.info(query)
+
+    
+     cursor = db.get_db().cursor()
+     cursor.execute(query)
+     db.get_db().commit()
+    
+     return 'Success!'
+
 @drivers.route('/drivers/order', methods=['GET'])
 def order():
     cursor = db.get_db().cursor()

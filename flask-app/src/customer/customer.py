@@ -54,13 +54,6 @@ def add_new_location():
     street = the_data['street']
     apt = the_data['apt']
 
-    #query = 'insert into Location (zip, state, city, street, apt) values ("'
-    #query += zip_code + '", "'
-    #query += state + '", "'
-    #query += city + '", "'
-    #query += street + '", '
-    #query += apt + ')'
-
     query = 'INSERT INTO Location (zip, state, city, street, apt) VALUES ('
     query += f'"{zip_code}", "{state}", "{city}", "{street}", "{apt}")'
 
@@ -72,3 +65,27 @@ def add_new_location():
     db.get_db().commit()
     
     return 'Success!'
+
+@customer.route('/addcustomer', methods=['Post'])
+def add_customer():
+     the_data = request.json
+     current_app.logger.info(the_data)
+     
+     customerid = the_data.get('customerID')
+     info = the_data.get('info')
+     phonenumber = the_data.get('phoneNumber')
+     addressid = the_data.get('addressId')
+     paymentmethod = the_data.get('paymentMethod')
+     deliveryperference = the_data.get('deliveryPreference')
+     login = the_data.get('loginTime')
+     
+     query = 'INSERT INTO Customer (customerID, Info, phoneNumber, addressId, paymentMethod, deliveryPreference, loginTime) VALUES ('
+     query += f'"{customerid}", "{info}", "{phonenumber}", "{addressid}", "{paymentmethod}", "{deliveryperference}", "{login}")'
+     current_app.logger.info(query)
+
+    
+     cursor = db.get_db().cursor()
+     cursor.execute(query)
+     db.get_db().commit()
+    
+     return 'Success!'
