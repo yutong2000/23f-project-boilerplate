@@ -96,19 +96,20 @@ def update_driver_availability(driver_id):
     db.get_db().commit()
     return jsonify({'message': 'Driver availability updated successfully'})
 
-@drivers.route('/driver/order_review/<DriverId>', methods=['GET'])
+@drivers.route('/driver/order_review/<int:DriverId>', methods=['GET'])
 def review_order(DriverId):
     query = '''
-        SELECT Driver_Cus.DriverEarning, Driver_Cus.DriverId, Driver_Cus, DeliveryTime
-        FROM Driver_Cus join Driver on Driver_Cus.DriverId = Driver.DriverId
-        WHERE Driver = 
-    ''' + str(DriverId)
-    current_app.logger.info(query)
+        SELECT Driver_Cus.DriverEarning, Driver_Cus.DriverId, Driver_Cus.DeliveryTime
+        FROM Driver_Cus 
+        JOIN Driver ON Driver_Cus.DriverId = Driver.DriverId
+        WHERE Driver_Cus.DriverId = %s
+    '''
     cursor = db.get_db().cursor()
-    cursor.execute(query)
+    cursor.execute(query, (DriverId,))
     column_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
     for row in theData:
         json_data.append(dict(zip(column_headers, row)))
     return jsonify(json_data)
+
