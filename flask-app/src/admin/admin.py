@@ -71,28 +71,27 @@ def get_restaurant():
 
 @admin.route('/addrestaurant', methods=['POST'])
 def add_restaurant():
+    the_data = request.json
+    current_app.logger.info(the_data)
+    
+    restaurantid = the_data.get('restaurantID')
+    name = the_data.get('name')
+    phonenumber = the_data.get('phoneNumber')
+    performance = the_data.get('performance ')
+    sale = the_data.get('sale')
+    revenue = the_data.get('revenue')
+    locationid = the_data.get('locationid')
+    adminid = the_data.get('adminId')
+    
+    query = 'INSERT INTO Restaurant (restaurantID, name, phoneNumber, performance, sale, revenue, locationid, adminId) VALUES ('
+    query += f'"{restaurantid}", "{name}", "{phonenumber}", "{performance}", "{sale}", "{revenue}", "{locationid}", "{adminid}")'
+    current_app.logger.info(query)
+
     cursor = db.get_db().cursor()
-
-
-    location_id = cursor.lastrowid
-
-    name = request.form.get('name')
-    phoneNumber = request.form.get('phoneNumber')
-    performance = request.form.get('performance')  
-    sale = request.form.get('sale')      
-    revenue = request.form.get('revenue')          
-    locationId = request.form.get('locationId')    
-    adminId = request.form.get('adminId')
-
-    restaurant_query = '''
-        INSERT INTO Restaurant(name, phoneNumber, locationId, performance, sale, revenue, adminId)
-        VALUES (%s, %s, %s, %s, %s, %s, %s)
-    '''
-    cursor.execute(restaurant_query, (name, phoneNumber, location_id, performance, sale, revenue, adminId))
-
+    cursor.execute(query)
     db.get_db().commit()
-
-    return 'The restaurant and its location have been added'
+    
+    return 'Success!'
 
 
 @admin.route('/adddriver', methods=['POST'])
