@@ -1,44 +1,162 @@
 -- Assuming you have a table named 'RestaurantFoodItems' with columns RestaurantId and FoodItem
 
-INSERT INTO Restaurant_foodItem (RestaurantId, FoodItem)
-VALUES
-(17, 5),
-(38, 37),
-(15, 9),
-(24, 4),
-(21, 30),
-(11, 8),
-(31, 23),
-(26, 32),
-(9, 2),
-(8, 22),
-(36, 7),
-(23, 11),
-(40, 14),
-(19, 38),
-(4, 25),
-(16, 24),
-(6, 36),
-(14, 20),
-(12, 21),
-(33, 10),
-(1, 13),
-(34, 16),
-(10, 29),
-(37, 1),
-(13, 15),
-(25, 18),
-(20, 19),
-(39, 17),
-(32, 35),
-(28, 28),
-(35, 6),
-(3, 34),
-(22, 26),
-(18, 40),
-(7, 12),
-(2, 31),
-(5, 33),
-(27, 39),
-(30, 27),
-(29, 3);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (8, 39);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (4, 3);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (38, 32);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (33, 11);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (29, 12);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (19, 13);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (25, 9);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (34, 33);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (13, 17);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (9, 5);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (32, 1);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (20, 31);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (10, 26);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (17, 38);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (40, 25);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (39, 34);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (27, 37);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (21, 8);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (18, 24);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (14, 2);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (2, 36);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (1, 28);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (23, 21);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (37, 7);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (15, 27);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (26, 6);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (16, 10);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (36, 14);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (31, 15);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (11, 18);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (12, 30);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (6, 35);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (3, 19);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (22, 20);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (7, 4);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (28, 16);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (30, 40);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (35, 29);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (5, 22);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (24, 23);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (29, 38);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (16, 28);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (12, 36);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (2, 19);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (14, 35);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (28, 32);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (24, 5);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (5, 4);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (18, 18);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (4, 26);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (8, 13);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (7, 14);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (36, 8);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (17, 1);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (37, 24);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (33, 9);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (26, 31);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (1, 37);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (11, 25);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (25, 29);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (21, 39);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (3, 30);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (31, 7);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (13, 27);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (30, 20);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (15, 3);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (35, 11);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (22, 34);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (23, 33);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (39, 16);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (32, 17);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (38, 23);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (10, 40);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (9, 6);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (34, 15);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (6, 2);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (19, 10);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (27, 21);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (20, 22);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (40, 12);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (13, 18);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (30, 11);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (37, 4);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (10, 29);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (39, 6);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (20, 39);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (15, 33);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (33, 31);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (23, 9);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (16, 8);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (6, 3);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (29, 5);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (12, 21);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (4, 17);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (19, 25);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (40, 16);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (18, 37);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (35, 35);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (7, 38);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (5, 32);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (14, 30);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (9, 10);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (22, 24);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (28, 40);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (31, 27);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (34, 14);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (25, 12);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (24, 20);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (32, 26);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (2, 23);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (27, 2);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (1, 1);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (11, 36);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (8, 19);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (21, 22);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (26, 7);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (3, 28);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (17, 34);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (38, 15);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (36, 13);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (34, 26);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (33, 40);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (37, 28);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (12, 22);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (28, 27);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (19, 23);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (13, 38);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (39, 11);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (38, 9);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (2, 10);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (30, 8);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (6, 5);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (24, 36);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (16, 39);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (8, 34);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (3, 2);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (26, 4);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (29, 35);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (21, 18);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (9, 16);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (7, 30);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (10, 15);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (22, 32);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (11, 31);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (40, 25);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (14, 7);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (20, 3);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (31, 6);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (36, 21);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (23, 37);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (32, 29);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (15, 33);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (5, 24);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (27, 13);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (35, 20);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (1, 19);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (18, 14);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (4, 17);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (25, 12);
+insert into Restaurant_foodItem (RestaurantId, FoodItem) values (17, 1);
