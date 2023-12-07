@@ -56,7 +56,7 @@ def order():
         json_data.append(dict(zip(column_headers, row)))
 
     return jsonify(json_data)
-
+'''
 @drivers.route('/delivery_requests', methods=['GET'])
 def get_delivery_requests():
     
@@ -77,12 +77,12 @@ def get_delivery_requests():
 @drivers.route('/delivery_status/{deliveryID}', methods=['PUT'])
 def update_deliver_status(deliveryID):
     Delivered = False
-    query = '''
+    query = 
         UPDATE Driver_Cus
         SET DeliveryTime = CURRENT_TIMESTAMP
             Delivered = %s
         WHERE DeliveryID = %s
-    '''
+    
     cursor = db.get_db().cursor()
     cursor.execute(query, (Delivered, deliveryID))
     db.get_db().commit()
@@ -98,12 +98,12 @@ def update_driver_availability(driver_id):
 
 @drivers.route('/driver/order_review/<int:DriverId>', methods=['GET'])
 def review_order(DriverId):
-    query = '''
+    query = 
         SELECT Driver_Cus.DriverEarning, Driver_Cus.DriverId, Driver_Cus.DeliveryTime
         FROM Driver_Cus 
         JOIN Driver ON Driver_Cus.DriverId = Driver.DriverId
         WHERE Driver_Cus.DriverId = %s
-    '''
+
     cursor = db.get_db().cursor()
     cursor.execute(query, (DriverId,))
     column_headers = [x[0] for x in cursor.description]
@@ -112,4 +112,4 @@ def review_order(DriverId):
     for row in theData:
         json_data.append(dict(zip(column_headers, row)))
     return jsonify(json_data)
-
+'''
