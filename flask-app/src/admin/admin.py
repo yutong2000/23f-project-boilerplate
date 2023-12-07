@@ -130,9 +130,10 @@ def add_customer():
      addressid = the_data.get('addressId')
      paymentmethod = the_data.get('paymentMethod')
      deliveryperference = the_data.get('deliveryPreference')
+     adminid = the_data.get("adminId")
      
-     query = 'INSERT INTO Customer (customerID, Info, phoneNumber, addressId, paymentMethod, deliveryPreference) VALUES ('
-     query += f'"{customerid}", "{info}", "{phonenumber}", "{addressid}", "{paymentmethod}", "{deliveryperference}")'
+     query = 'INSERT INTO Customer (customerID, Info, phoneNumber, addressId, paymentMethod, deliveryPreference, adminId) VALUES ('
+     query += f'"{customerid}", "{info}", "{phonenumber}", "{addressid}", "{paymentmethod}", "{deliveryperference}", "{adminid}")'
      current_app.logger.info(query)
 
     
