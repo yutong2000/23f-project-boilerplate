@@ -117,60 +117,28 @@ def add_driver():
      db.get_db().commit()
     
      return 'Success!'
-     '''
-
-     cursor = db.get_db().cursor()
-     query = 'INSERT INTO Driver (DriverId, Info, PhoneNumber, License, Insurance, Availability, AdminId) VALUES (%s, %s, %s, %s, %s, %s, %s)'
-     cursor.execute(query, (driverid, info, phonenumber, license, insurance, availability, adminid))
-     #current_app.logger.info(query)
-
-    
-     #cursor.execute(query)
-     db.get_db().commit()
-    
-     return 'Success!'
-
-    the_data = request.json
-    current_app.logger.info(the_data)
-    
-    zip_code = the_data['zip']
-    state = the_data['state']
-    city = the_data['city']
-    street = the_data['street']
-    apt = the_data['apt']
-
-    #query = 'insert into Location (zip, state, city, street, apt) values ("'
-    #query += zip_code + '", "'
-    #query += state + '", "'
-    #query += city + '", "'
-    #query += street + '", '
-    #query += apt + ')'
-
-    query = 'INSERT INTO Location (zip, state, city, street, apt) VALUES ('
-    query += f'"{zip_code}", "{state}", "{city}", "{street}", "{apt}")'
-
-    current_app.logger.info(query)
-
-    
-    cursor = db.get_db().cursor()
-    cursor.execute(query)
-    db.get_db().commit()
-    
-    return 'Success!'
-    '''
 
 
 @admin.route('/addcustomer', methods=['Post'])
 def add_customer():
+     the_data = request.json
+     current_app.logger.info(the_data)
+     
+     customerid = the_data.get('customerID')
+     info = the_data.get('info')
+     phonenumber = the_data.get('phoneNumber')
+     addressid = the_data.get('addressId')
+     paymentmethod = the_data.get('paymentMethod')
+     deliveryperference = the_data.get('deliveryPreference')
+     login = the_data.get('loginTime')
+     
+     query = 'INSERT INTO Customer (customerID, Info, phoneNumber, addressId, paymentMethod, deliveryPreference, loginTime) VALUES ('
+     query += f'"{customerid}", "{info}", "{phonenumber}", "{addressid}", "{paymentmethod}", "{deliveryperference}", "{login}")'
+     current_app.logger.info(query)
+
+    
      cursor = db.get_db().cursor()
-     Info = request.form('Info')
-     Address = request.form('Address')
-     PaymentMethod = request.form('PaymentMethod')
-     PhoneNumber = request.form('PhoneNumber')
-     CustomerID = request.form('CustomerID')
-     DeliveryPerference = request.form('DeliveryPerference')
-     query = 'INSERT INTO Customer(Info, CustomerID, Address, PhoneNumber, DeliveryPerference) values(%s, %s, %s, %s, %s)'
      cursor.execute(query)
      db.get_db().commit()
-     return 'The costomer has been added'
-     
+    
+     return 'Success!'

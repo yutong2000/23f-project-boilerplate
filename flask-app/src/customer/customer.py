@@ -72,4 +72,3 @@ def add_new_location():
     db.get_db().commit()
     
     return 'Success!'
-    
