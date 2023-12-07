@@ -76,7 +76,7 @@ def add_new_location():
     
     return 'Success!'
 
-@restaurant.route('/restaurant/addrestaurant', methods=['POST'])
+@restaurant.route('/addrestaurant', methods=['POST'])
 def add_restaurant():
     the_data = request.json
     current_app.logger.info(the_data)
