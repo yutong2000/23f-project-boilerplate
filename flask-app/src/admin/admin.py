@@ -112,7 +112,7 @@ def add_driver():
      query += f'"{driverid}", "{info}", "{phonenumber}", "{license}", "{insurance}", "{availability}", "{adminid}")'
      '''
 
-          cursor = db.get_db().cursor()
+     cursor = db.get_db().cursor()
      query = 'INSERT INTO Driver (DriverId, Info, PhoneNumber, License, Insurance, Availability, AdminId) VALUES (%s, %s, %s, %s, %s, %s, %s)'
      cursor.execute(query, (driverid, info, phonenumber, license, insurance, availability, adminid))
      #current_app.logger.info(query)
