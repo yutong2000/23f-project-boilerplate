@@ -90,17 +90,17 @@ def add_customer():
     
      return 'Success!'
 
-@customer.route('/updatecustomer/<customerID>')
+@customer.route('/updatecustomer/<customerID>', methods=['PUT'])
 def update_restaurant(customerID):
     the_data = request.json
     current_app.logger.info(the_data)
 
-    info = the_data('info')
-    phoneNumber = the_data('phoneNumber')
-    addressid = the_data('addressId')
-    paymentmethod = the_data('paymentMethod')
-    deliveryperference = the_data('deliveryPerference')
-    adminId = the_data('adminId')
+    info = the_data.get('info')
+    phoneNumber = the_data.get('phoneNumber')
+    addressid = the_data.get('addressId')
+    paymentmethod = the_data.get('paymentMethod')
+    deliveryperference = the_data.get('deliveryPerference')
+    adminId = the_data.get('adminId')
 
     query = '''  
         UPDATE Customer
