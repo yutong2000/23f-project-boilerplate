@@ -58,8 +58,7 @@ def get_customers():
 def get_restaurant():
     cursor = db.get_db().cursor()
     cursor.execute('SELECT Restaurant.restaurantID, name, Restaurant.phoneNumber, Restaurant.performance, sale, revenue, Location.zip, Location.state, Location.city, Location.street, Location.apt, Restaurant.adminId '
-                   'FROM Restaurant join Restaurant_foodItem on Restaurant.restaurantID = Restaurant_foodItem.RestaurantId '
-                   'join Location on Restaurant.locationId = Location.locationId ' 
+                   'FROM Restaurant join Location on Restaurant.locationId = Location.locationId ' 
                    'join Admin on Restaurant.adminId = Admin.adminId')
     column_headers = [x[0] for x in cursor.description]
     json_data = []
