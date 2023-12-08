@@ -1,10 +1,40 @@
-# Password secrets for MySQL
+# MySQL + Flask Boilerplate Project
 
-You should never store passwords in a file that will be pushed to github or any other cloud-hosted system.  You'll notice that in the .gitignore, two files from this folder are indeed ignored.  
+This repo contains a boilerplate setup for spinning up 3 Docker containers: 
+1. A MySQL 8 container for obvious reasons
+1. A Python Flask container to implement a REST API
+1. A Local AppSmith Server
 
-In this folder, you'll need to create two files:
+## How to setup and start the containers
+**Important** - you need Docker Desktop installed
 
-- `db_password.txt`
-  - in this file, put a password that will be used for a non-root db user
-- `db_root_password.txt`
-  - in this file, put the password you want to use for the root user (superuser) of mysql. 
+1. Clone this repository.  
+1. Create a file named `db_root_password.txt` in the `secrets/` folder and put inside of it the root password for MySQL. 
+1. Create a file named `db_password.txt` in the `secrets/` folder and put inside of it the password you want to use for the a non-root user named webapp. 
+1. In a terminal or command prompt, navigate to the folder with the `docker-compose.yml` file.  
+1. Build the images with `docker compose build`
+1. Start the containers with `docker compose up`.  To run in detached mode, run `docker compose up -d`. 
+
+
+
+### Project Overview
+This app is designed to manage customer orders, stock orders, and ingredient production across multiple boba stores organized by region. An app was created via AppSmith - it contains two sample pages for use from a barista's standpoint as well as a manager's standpoint. 
+
+
+## This repository contains two pages that interact with the [HungryHuh Database](https://github.com/yutong2000/23f-project-boilerplate)
+
+
+## Pages
+There are 3 main pages, Customer, Restaurant, and Admin.
+
+# Customer Page
+Inside customer page, we have order, order history, addCustomer.
+
+# Admin Page
+Inside admin page, we have add customer, delete customer, update restaurant, add restaurant, delete restaurant, add driver, delete driver.
+
+# Restaurant Page
+Inside restaurant page, we have add new food, update resaurant.
+
+##### You can visit the application using the below link
+##### ()
