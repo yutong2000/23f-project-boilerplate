@@ -26,6 +26,22 @@ def get_customers():
     the_response.mimetype = 'application/json'
     return the_response
 
+@customer.route('/customer/order', methods=['GET'])
+def get_order():
+    cursor = db.get_db().cursor()
+    cursor.execute(''' select Order_Foods.FoodId, OrdersInfo.PaymentMethod, OrdersInfo.TransactionDate, OrdersInfo.Cost
+                        from OrdersInfo join Order_Foods on OrdersInfo.OrderId = Order_Foods.OrderId
+''')
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
+
 @customer.route('/customers/order/update-foods', methods=['PUT'])
 def update_order_foods():
     data = request.json
@@ -118,10 +134,6 @@ def update_restaurant(customerID):
 
 @customer.route('/deletecustomer/<int:customerID>', methods=['DELETE'])
 def delete_customer(customerID):
-    # Authentication and authorization logic goes here
-    # Ensure that the customer making the request matches the customerID
-    # ...
-
     cursor = db.get_db().cursor()
     query = 'DELETE FROM Customer WHERE customerID = %s'
     cursor.execute(query, (customerID,))
