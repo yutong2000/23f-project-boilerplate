@@ -194,7 +194,7 @@ def update_restaurant(customerID):
 
     return 'Info has updated.'
 
-@@admin.route('/admin/updaterestaurant/<int:restaurantID>', methods=['PUT'])
+@admin.route('/admin/updaterestaurant/<int:restaurantID>', methods=['PUT'])
 def update_restaurant(restaurantID):
     the_data = request.json
     current_app.logger.info(the_data)
