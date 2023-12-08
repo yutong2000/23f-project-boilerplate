@@ -36,5 +36,14 @@ Inside admin page, we have add customer, delete customer, update restaurant, add
 # Restaurant Page
 Inside restaurant page, we have add new food, update resaurant.
 
-##### You can visit the application using the below link
-##### ()
+##### You can view our presentation through the link below 
+##### (https://youtu.be/0DrnmG7pzBI)
+
+##### You can view the application using the link below
+##### https://github.com/nhzq-1010/AppSmith.git
+
+##### You can vie our git repo using the link below
+##### https://github.com/yutong2000/23f-project-boilerplate.git
+
+
+##### Thank you!
