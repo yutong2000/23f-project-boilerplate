@@ -1,0 +1,41 @@
+﻿customerID,name,info,phoneNumber,addressId,paymentMethod,deliveryPreference,loginTime,adminId,locationID
+1,'Alice Smith','Consistent and reliable customer with a preference for healthy options.','661-819-4541',32,'mastercard','Prefers quick and timely deliveries,'2023-01-07',17,1
+2,'Bob Johnson','Enjoys a wide variety of cuisines,'865-217-0034',32,'mastercard','Likes family-sized orders with special attention to packaging.','2022-03-22',35,2
+3,'Charlie Brown','Health-conscious,'485-124-9647',6,'mastercard','Prefers no-contact delivery and eco-friendly packaging.','2023-01-26',30,3
+4,'David Wilson','Frequent orderer of fast food,'766-188-7697',15,'mastercard','Requests deliveries to be made directly to the doorstep.','2022-10-13',1,4
+5,'Ella Davis','Loves experimenting with different international cuisines.','811-587-9226',31,'mastercard','Seeks recommendations for new dishes to try with each order.','2023-05-16',32,5
+6,'Frank Miller','Prefers ordering comfort food, especially during weekends.',1,'mastercard','Likes quick delivery services,'2022-07-07',17,6
+7,'Grace Lee','Enjoys gourmet meals, often orders from high-end restaurants.',20,'mastercard','Requests detailed information about ingredients due to allergies.','2023-04-02',7,7
+8,'Henry Taylor','A fan of traditional dishes, prefers homemade-style cooking.',9,'mastercard','Prefers eco-friendly packaging and sustainable delivery options.','2022-09-14',22,8
+9,'Isabel White','Regular customer, often orders light snacks and tea.',14,'mastercard','Enjoys trying new cafes and bakeries for afternoon snacks.','2023-08-31',6,9
+10,'Jack Brown','Frequent diner of Italian cuisine, loves pasta and pizza.',24,'mastercard','Appreciates quick delivery,'2023-01-29',5,10
+11,'Karen Green','Appreciates gourmet coffee and pastries, orders frequently.',2,'mastercard','Prefers early morning deliveries for breakfast items.','2022-12-03',5,11
+12,'Lucas Anderson','Enjoys spicy food, often orders from Indian and Thai restaurants.',35,'mastercard','Requests extra condiments and spices with meals.','2022-10-03',10,12
+13,'Mia Robinson','Prefers organic and farm-to-table dining options.','922-416-9002',1,'mastercard','Looks for seasonal and fresh produce in orders.','2023-09-25',34,13
+14,'Nathan Hall','Regular customer at local eateries, supports small businesses.',29,'mastercard','Enjoys local cuisine,'2022-06-13',8,14
+15,'Olivia Lewis','Health enthusiast, prefers gluten-free and low-carb options.',36,'mastercard','Requests for nutritional information with each meal.','2023-03-22',25,15
+16,'Peter Martinez','A lover of seafood, often experiments with different recipes.',23,'mastercard','Prefers freshly prepared seafood,'2022-03-13',15,16
+17,'Quinn Scott','Enjoys weekend brunches, often orders for the whole family.',25,'mastercard','Requests delivery to align with family brunch time.','2023-10-02',16,17
+18,'Rachel Turner','Student, often orders affordable and quick meals.',1,'mastercard','Looks for budget-friendly options with fast delivery.','2023-02-13',30,18
+19,'Samuel Wright','Busy professional, often orders healthy meals for convenience.',19,'mastercard','Prefers meals that can be eaten on the go.','2023-10-23',32,19
+20,'Tara Harris','Family-focused, prefers ordering large meals for family gatherings.',32,'mastercard','Looks for family meal deals,'2022-09-02',6,20
+21,'Ulysses King','Loves exploring new restaurants and cuisines, very adventurous.',21,'mastercard','Enjoys diverse cuisines,'2022-07-22',22,21
+22,'Victoria Turner','Active in social events, often orders catering for parties.',16,'mastercard','Requests detailed catering services for special events.','2023-03-27',38,22
+23,'William Davis','Sports enthusiast, prefers high-protein meals post-workout.',3,'mastercard','Orders nutritious,'2022-04-06',34,23
+24,'Xavier Moore','Coffee aficionado, loves trying different coffee blends.',10,'mastercard','Prefers morning coffee deliveries from various local cafes.','2022-11-10',3,24
+25,'Yasmine Perez','Avid baker, often orders baking supplies and ingredients.',29,'mastercard','Seeks prompt delivery of fresh baking ingredients.','2023-08-03',2,25
+26,'Zachary Scott','Likes to host dinner parties, orders gourmet meals.',24,'mastercard','Prefers elaborate meals for hosting dinner events.','2022-12-01',14,26
+27,'Emma Johnson','Vegetarian, prefers a variety of plant-based options.',4,'mastercard','Requests a range of vegetarian dishes,'2023-09-30',14,27
+28,'Michael Brown','Likes casual dining, often orders burgers and fries.',38,'mastercard','Enjoys fast food,'2023-10-10',29,28
+29,'Sophia Miller','Dessert lover, frequently orders cakes and pastries.',10,'mastercard','Often orders sweet treats for family celebrations.','2023-06-15',9,29
+30,'James Wilson','Reliable and consistent in service, with a focus on quality.',5,'mastercard','Prioritizes efficient delivery with attention to detail.','2022-07-30',26,30
+31,'Liam Taylor','Known for exceptional attention to customer needs and preferences.','448-618-9450',31,'mastercard','Seeks quick,'2023-01-06',17,31
+32,'Oliver Davis','Values timely and respectful interaction with service providers.','407-251-9448',33,'mastercard','Prefers swift and secure delivery methods.','2022-11-30',6,32
+33,'Sophia Smith','Appreciates efficient service with a personal touch.','407-209-0744',15,'mastercard','Favors personalized delivery options tailored to schedule.','2023-11-26',31,33
+34,'Mia Davis','Praises quick resolution of issues and effective communication.','768-188-9736',30,'mastercard','Opt for fast and reliable delivery services.','2023-03-29',23,34
+35,'Liam Clark','Highlights the importance of timely and accurate deliveries.','295-133-1493',23,'mastercard','Enjoys expedited delivery with real-time tracking.','2023-05-20',17,35
+36,'Olivia Wright','Commends the blend of speed and safety in deliveries.','111-267-2106',32,'mastercard','Values prompt and careful handling of deliveries.','2023-05-24',3,36
+37,'Nathan Scott','Emphasizes the need for respectful and professional service.','860-600-0872',13,'mastercard','Prefers a delivery service that ensures product safety.','2023-03-25',28,37
+38,'James Harris','Admires efficiency and attention to detail in service.','341-405-5605',21,'mastercard','Chooses delivery options with a focus on punctuality.','2022-08-17',8,38
+39,'Liam Miller','Values prompt responses and clear communication from service.','403-576-9780',1,'mastercard','Looks for speedy and efficient delivery solutions.','2022-03-21',15,39
+40,'Sophia Robinson','Appreciates quick service and responsiveness from providers.','402-257-2874',35,'mastercard','Prefers fast and reliable delivery,'2023-07-01',22,40

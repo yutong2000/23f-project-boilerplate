@@ -1,0 +1,41 @@
+﻿FoodId,FoodName,Availability,Price
+1,Spaghetti Carbonara,TRUE,8
+2,Margherita Pizza,FALSE,65
+3,Chicken Alfredo,TRUE,46
+4,Filet Mignon Steak,TRUE,90
+5,Salmon Teriyaki,TRUE,73
+6,Caesar Salad,FALSE,89
+7,Sushi Platter,FALSE,18
+8,Vegetable Stir-Fry,FALSE,62
+9,Shrimp Scampi,FALSE,75
+10,Beef Tacos,FALSE,44
+11,Grilled Salmon,FALSE,27
+12,Mushroom Risotto,FALSE,34
+13,Chicken Parmesan,FALSE,46
+14,Caprese Salad,FALSE,23
+15,Lobster Bisque,FALSE,92
+16,BBQ Ribs,FALSE,43
+17,Vegetable Lasagna,FALSE,71
+18,Margherita Pizza,TRUE,11
+19,Crispy Chicken Wings,FALSE,28
+20,Sushi Rolls,FALSE,46
+21,Beef Stir-Fry,FALSE,69
+22,Penne Alfredo,FALSE,36
+23,Chicken Noodle Soup,FALSE,5
+24,Vegetable Fajitas,FALSE,37
+25,Teriyaki Chicken Bowl,FALSE,48
+26,Pesto Pasta,FALSE,31
+27,Grilled Ribeye Steak,TRUE,82
+28,Margherita Pizza,TRUE,21
+29,Baked Ziti,FALSE,47
+30,Chicken Caesar Salad,TRUE,10
+31,Cheeseburger,TRUE,2
+32,Shrimp Scampi,FALSE,51
+33,New York Strip Steak,TRUE,96
+34,Vegetable Sushi Rolls,FALSE,45
+35,Clam Chowder,FALSE,6
+36,Grilled Chicken Sandwich,TRUE,56
+37,Bacon Wrapped Scallops,FALSE,97
+38,Beef and Broccoli,TRUE,94
+39,Vegetable Pad Thai,FALSE,63
+40,Seafood Paella,FALSE,65
