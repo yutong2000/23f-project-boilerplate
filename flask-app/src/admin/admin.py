@@ -166,9 +166,9 @@ def add_new_location():
     db.get_db().commit()
     
     return 'Success!'
-''''
+
 @admin.route('/admin/updatecustomer/<customerID>', methods=['PUT'])
-def update_restaurant(customerID):
+def update_customer(customerID):
     the_data = request.json
     current_app.logger.info(the_data)
 
@@ -179,11 +179,11 @@ def update_restaurant(customerID):
     deliveryperference = the_data('deliveryPerference')
     adminId = the_data('adminId')
 
-    query = 
+    query = '''
         UPDATE Customer
         SET info = %s, phoneNumber = %s, addressId = %s, paymentMethod = %s, deliveryPerference = %s, adminId = %s
         WHERE customerID = %s
-
+    '''
 
     current_app.logger.info(query)
 
@@ -207,18 +207,18 @@ def update_restaurant(restaurantID):
     locationId = the_data.get('locationId')
     adminId = the_data.get('adminId')
 
-    query = 
+    query = '''
         UPDATE Restaurant 
         SET name = %s, phoneNumber = %s, performance = %s, sale = %s, revenue = %s, locationId = %s, adminId = %s
         WHERE restaurantID = %s
-
+    '''
     cursor = db.get_db().cursor()
     cursor.execute(query, (name, phoneNumber, performance, sale, revenue, locationId, adminId, restaurantID))
     db.get_db().commit()
 
     return jsonify({'message': 'Restaurant info updated successfully'}), 200
 
-'''
+
 
 @admin.route('/admin/deleterestaurant/<int:restaurantID>', methods=['DELETE'])
 def delete_restaurant(restaurantID):
