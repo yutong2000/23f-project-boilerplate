@@ -194,32 +194,30 @@ def update_restaurant(customerID):
 
     return 'Info has updated.'
 
-@admin.route('/admin/updaterestaurant/<restaurantID>', methods=['PUT'])
+@@admin.route('/admin/updaterestaurant/<int:restaurantID>', methods=['PUT'])
 def update_restaurant(restaurantID):
     the_data = request.json
     current_app.logger.info(the_data)
 
-    name = the_data('name')
-    phoneNumber = the_data('phoneNumber')
-    performance = the_data('performance')
-    sale = the_data('sale')
-    revenue = the_data('revenue')
-    locationId = the_data('locationId')
-    adminId = the_data('adminId')
+    name = the_data.get('name')
+    phoneNumber = the_data.get('phoneNumber')
+    performance = the_data.get('performance')
+    sale = the_data.get('sale')
+    revenue = the_data.get('revenue')
+    locationId = the_data.get('locationId')
+    adminId = the_data.get('adminId')
 
     query = '''
         UPDATE Restaurant 
         SET name = %s, phoneNumber = %s, performance = %s, sale = %s, revenue = %s, locationId = %s, adminId = %s
         WHERE restaurantID = %s
     '''
-    current_app.logger.info(query)
-
     cursor = db.get_db().cursor()
-    cursor.execute(query)
+    cursor.execute(query, (name, phoneNumber, performance, sale, revenue, locationId, adminId, restaurantID))
     db.get_db().commit()
 
+    return jsonify({'message': 'Restaurant info updated successfully'}), 200
 
-    return 'Info has updated.'
 
 
 @admin.route('/admin/deleterestaurant/<int:restaurantID>', methods=['DELETE'])
